@@ -1,0 +1,39 @@
+<div id="Top_bar" style="top: 61px;">
+  <div class="container">
+    <div class="column one">
+      <div class="top_bar_left">
+        <!-- Logo-->
+        <div class="logo">
+          <a id="logo" href="index.html" title="BeSoftware - BeTheme"><img class="scale-with-grid" src="/images/software.png" alt="BeSoftware - BeTheme" />
+          </a>
+        </div>
+        <!-- Main menu-->
+        <div class="menu_wrapper">
+          <nav id="menu" class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="menu">
+              <li class='{{ if eq .URL "/" }}current_page_item{{ end }}'>
+                <a href="/"><span>HOME</span></a>
+              </li>
+              <li class='color-orange {{ if eq .URL "/pricing/" }}current_page_item{{ end }}'>
+                <a href="/pricing"><span>PRICING</span></a>
+              </li>
+              <li class='color-sea {{ if eq .URL "/contact/" }}current_page_item{{ end }}'>
+                <a href="/contact"><span>CONTACT</span></a>
+              </li>
+            </ul>
+          </nav>
+          <a class="responsive-menu-toggle" href="index.html#"><i class="icon-menu"></i></a>
+        </div>
+        <!-- Secondary menu area - only for certain pages -->
+        <div class="secondary_menu_wrapper"></div>
+        <!-- Banner area - only for certain pages-->
+        <div class="banner_wrapper"></div>
+        <!-- Header Searchform area-->
+      </div>
+      <div class="top_bar_right">
+        <div class="top_bar_right_wrapper">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

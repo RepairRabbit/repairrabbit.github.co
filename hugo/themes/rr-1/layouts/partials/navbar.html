@@ -11,14 +11,23 @@
         <div class="menu_wrapper">
           <nav id="menu" class="menu-main-menu-container">
             <ul id="menu-main-menu" class="menu">
-              <li class='{{ if eq .URL "/" }}current_page_item{{ end }}'>
+              <li>
                 <a href="/"><span>HOME</span></a>
               </li>
-              <li class='color-orange {{ if eq .URL "/pricing/" }}current_page_item{{ end }}'>
-                <a href="/pricing"><span>PRICING</span></a>
+              <li>
+                <a href="http://demo.repairrabbit.co/" target="_blank"><span>DEMO</span></a>
               </li>
-              <li class='color-sea {{ if eq .URL "/contact/" }}current_page_item{{ end }}'>
-                <a href="/contact"><span>CONTACT</span></a>
+              <li>
+                <a href="/#about_us"><span>ABOUT US</span></a>
+              </li>
+              <li>
+                <a href="/#features"><span>FEATURES</span></a>
+              </li>
+              <li>
+                <a href="/#pricing"><span>PRICING</span></a>
+              </li>
+              <li>
+                <a href="/#contact"><span>CONTACT</span></a>
               </li>
             </ul>
           </nav>

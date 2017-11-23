@@ -178,7 +178,7 @@
                   </div>
                 </div>
               </div>
-              <div class="section" style="padding-top:100px; padding-bottom:60px; ">
+              <div class="section" style="padding-top:100px; padding-bottom:60px;" id="features">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <!-- One full width row-->
@@ -292,80 +292,103 @@
                   </div>
                 </div>
               </div>
-              <div class="section" style="padding-top:100px; padding-bottom:30px; background-color:#f1f7fb">
+              <div class="section" style="padding-top:45px; padding-bottom:45px;background-color:#f1f7fb;" id="pricing">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
+                    <!-- One full width row-->
+                    <div class="column_attr align_center" style="padding-bottom:20px;">
+                      <h2>Pricing</h2>
+                    </div>
+                    <!-- One Fourth (1/4) Column -->
+                    <div class="clearfix">
+                      <div class="column one-fourth column_pricing_item" style="margin: 0 auto;max-width: 300px;padding-bottom:45px;float: none;">
+                        <div class="pricing-box pricing-box-featured pricing-box-box" style="background-color: #1dc6bc;">
+                          <div class="plan-header">
+                            <div class="image"><img src="/images/home_software_pricing_icon_2.png" alt="3 month" width="75" height="87" />
+                            </div>
+                            <h2>3 month</h2>
+                            <div class="price">
+                              <sup class="currency">$</sup><span>39</span><sup class="period"></sup>
+                            </div>
+                            <hr class="hr_color" />
+                          </div>
+                          <div class="plan-inside">
+                            Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                          </div>
+                          <div class="plan-footer">
+                            <a href="pricing.html#" class="button button_left button_theme button_js"><span class="button_icon"><i class="icon-cog"></i></span><span class="button_label">Download</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- One full width row-->
+                    <div class="column_attr align_center">
+                      <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                        <div class="image_wrapper"><img class="scale-with-grid" src="images/home_software_payment.png" alt="" width="396" height="23" />
+                        </div>
+                      </div>
+                      <hr class="no_line hrmargin_b_20" />
+                      <p style="color: #A4B5C1; margin: 0;">
+                        Aenean vel quam urna. Mauris tempor ornare eros, sed dignissim velit dictum consequat.
+                        <br> Aliquam sollicitudin rutrum odio, sollicitudin sagittis augue pretium id.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{ partial "orderToday.html" . }}
+              <div class="section" style="padding-top:100px; padding-bottom:60px;" id="about_us">
+                <div class="section_wrapper clearfix">
+                  <div class="items_group clearfix">
+                    <div class="column one column_column ">
+                      <div class="column_attr align_center">
+                        <h2>ABOUT US</h2>
+                        <p>Aenean nulla risus, vulputate in dignissim vel, dignissim eu turpis. Vivamus porta purus vel mauris tincidunt, at volutpat leo posuere. Etiam lobortis volutpat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section" style="padding-top:100px; padding-bottom:45px; background-color:#f1f7fb" id="contact">
+                <div class="section_wrapper clearfix">
+                  <div class="items_group clearfix">
+                    <div class="column one-fifth column_image ">
+                      <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                        <div class="image_wrapper"><img class="scale-with-grid" src="/images/home_software_contact.png" alt="" width="218" height="227" />
+                        </div>
+                      </div>
+                    </div>
                     <!-- One Second (1/2) Column -->
                     <div class="column one-second column_column ">
-                      <div class="column_attr animate" data-anim-type="fadeInLeft">
-                        <h2>Not Convinced Yet?
-                        </h2>
-                        <hr class="no_line hrmargin_b_40" />
-                        <!-- One Second (1/2) Column -->
-                        <div class="column one-second">
-                          <div style="border: 1px solid #d4e1ea; background: #fff; padding: 20px; border-radius: 20px; box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.08);">
-                            <a class="prettyphoto" style="overflow: hidden; border-radius: 20px;" href="https://vimeo.com/63242312">
-                              <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                <div class="image_wrapper"><img class="scale-with-grid" src="/images/home_software_video.jpg" alt="" width="380" height="209" />
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- One Second (1/2) Column -->
-                        <div class="column one-second">
-                          <div style="margin-left: 7%; margin-top: 20px;">
-                            <h5 style="margin-bottom: 10px;">Watch the video</h5>
-                            <p>
-                              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. D sit amet nibh vulputate cursus a sit amet mauris.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="column_attr">
+                        <h2>Contact us</h2>
+                        <hr class="no_line hrmargin_b_20" />
+                        <h4 style="font-style: italic; color: #00cdc1;">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.</h4>
+                        <hr class="no_line hrmargin_b_20" />
+                        <p class="big">
+                          Sollici tudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        </p>
                       </div>
                     </div>
                     <!-- One Fourth (1/4) Column -->
                     <div class="column one-fourth column_column ">
-                      <div class="column_attr align_center animate" data-anim-type="fadeInUp">
+                      <div class="column_attr">
                         <div style="border: 1px solid #d4e1ea; background: #fff; padding: 20px; border-radius: 20px; box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.08);">
-                          <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                            <div class="image_wrapper"><img class="scale-with-grid" src="/images/home_software_content_logo.png" alt="" width="116" height="106" />
-                            </div>
-                          </div>
-                          <hr class="no_line hrmargin_b_20" />
-                          <h5>Read our FAQ</h5>
-                          <p>
-                            Duis sed consequat velit, at commodo mauris donec bibendum.
+                          <h3 style="margin-bottom: 10px;">Contact details:</h3>
+                          <p class="big" style="margin-bottom: 0; display: block">
+                            Have any questions?
                           </p>
-                          <a href="index.html#">Read more</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Fourth (1/4) Column -->
-                    <div class="column one-fourth column_column ">
-                      <div class="column_attr animate" data-anim-type="fadeInUp">
-                        <div style="border: 1px solid #d4e1ea; background: #fff; padding: 20px; border-radius: 20px; box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.08);">
-                          <h4 style="text-align: center; font-weight: bold;">Knowledge Base</h4>
-                          <ul class="list_check">
-                            <li>
-                              Suspendisse a pellentesque dui non felis
-                            </li>
-                            <li>
-                              Aliquam ornare egestas eros et scelerisque tortor
-                            </li>
-                            <li>
-                              Quisque cursus et porttitor
-                            </li>
-                            <li>
-                              Nulla ipsum dolor lacus, suscipit adipiscing
-                            </li>
-                          </ul>
+                          <h4 style="font-weight: bold; word-wrap: break-word"><a href="mailto:noreply@envato.com">noreply@envato.com</a></h4>
+                          <p class="big" style="margin-bottom: 0; display: block">
+                            Call us
+                          </p>
+                          <h4 style="font-weight: bold; margin: 0;"><a href="contact.html#">+61 (0) 3 8376 6284</a></h4>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              {{ partial "orderToday.html" . }}
               <div class="section the_content no_content">
                 <div class="section_wrapper">
                   <div class="the_content_wrapper"></div>

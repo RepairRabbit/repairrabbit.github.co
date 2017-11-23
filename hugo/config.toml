@@ -1,3 +1,5 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Repair Rabbit"
+themesDir = "themes"
+theme = "rr-1"

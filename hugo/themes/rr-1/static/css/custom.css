@@ -1,0 +1,12 @@
+.price {
+  font-size: 50px;
+  margin-bottom: 45px;
+  color: #303030;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

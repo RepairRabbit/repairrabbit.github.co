@@ -24,3 +24,19 @@
   border-radius: 14px;
 }
 
+ul.footer_links {
+  margin-left: 0;
+}
+
+ul.footer_links li {
+  padding-left: 0;
+}
+
+#Footer a {
+  color: #bbb;
+}
+
+#Footer h4 {
+  margin: 0;
+  font-weight: normal;
+}

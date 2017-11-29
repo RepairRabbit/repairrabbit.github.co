@@ -100,4 +100,9 @@
       $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 60}, 1000);
     }
   });
+  $("#slide-1-layer-5 a").click(function(e) {
+    if($(this).attr('href').replace('/','')) {
+      $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 100}, 1000);
+    }
+  });
 </script>

@@ -6,7 +6,21 @@
 
 .display-flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
+
+.al_center {
+  align-items: center;
+}
+
+.jc_space_between {
+  justify-content: space-between;
+}
+
+.slider_pagination a.selected, .slider_pagination .slick-active a {
+  width: 12px;
+  height: 12px;
+  background-color: white !important;
+  border-radius: 14px;
+}
+

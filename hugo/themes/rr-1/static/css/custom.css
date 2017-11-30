@@ -24,6 +24,20 @@
   border-radius: 14px;
 }
 
+input[name="subscribe"]::-webkit-input-placeholder {
+  color: #aaa;
+}
+input[name="subscribe"]::-moz-placeholder {
+  color: #aaa;
+}
+input[name="subscribe"]:-ms-input-placeholder {
+  color: #aaa;
+}
+input[name="subscribe"]:-moz-placeholder {
+  color: #aaa;
+}
+
+
 ul.footer_links {
   margin-left: 0;
 }

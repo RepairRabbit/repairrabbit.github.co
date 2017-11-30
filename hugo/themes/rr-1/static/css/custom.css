@@ -54,3 +54,49 @@ ul.footer_links li {
   margin: 0;
   font-weight: normal;
 }
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technologies .tech {
+  margin: 5px;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  min-width: 215px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f1f2;
+}
+
+.technologies .tech:hover {
+  background-color: #e8e7e9;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.technologies .tech img,
+.technologies .tech svg{
+  margin-right: 5px;
+}
+
+.technologies .tech label{
+  margin-bottom: 10px;
+}
+
+.technologies .tech a{
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.technologies .tech *{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}

@@ -37,7 +37,7 @@
                 </div>
               </div>
               <!--  -->
-              <div class="section" style="padding-top: 45px; padding-bottom:45px;">
+              <div class="section" style="padding-top: 45px; padding-bottom:45px;background-color: #efefef;">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <!-- One Second (1/2) Column -->
@@ -47,16 +47,31 @@
                           {{ range .Data.Pages }}
                             <div class="_blog">
                               <a href="{{.Permalink}}">
-                                {{ if .Params.image }}
-                                  <img src="{{ .Params.image }}" height="100">
-                                {{else}}
-                                  <img src="https://hdwallpaperz.net/wp-content/uploads/2017/03/3D-Nature-Wallpaper-For-Mobile-Phone-11.jpg" height="100">
-                                {{ end }}
-                                <h3>
-                                  {{.Title}}
-                                </h3>
+                                <div class="bimage">
+                                  {{ if .Params.image }}
+                                    <img src="{{ .Params.image }}" height="100">
+                                  {{else}}
+                                    <img src="https://hdwallpaperz.net/wp-content/uploads/2017/03/3D-Nature-Wallpaper-For-Mobile-Phone-11.jpg" height="100">
+                                  {{ end }}
+                                </div>
+                                <div class="blog_info">
+                                  <h4 class="title">
+                                    {{.Title}}
+                                  </h4>
+                                  <p class="summary">
+                                    {{ if gt (len .Summary) 150 }}
+                                        {{ slicestr .Summary 0 157 }}...
+                                    {{ else }}
+                                        {{ .Summary }}
+                                    {{ end }}
+                                  </p>
+                                  <p class="auther">
+                                    <span style="text-transform: lowercase;">written by</span><br>
+                                    {{ .Params.auther }}
+                                  </p>
+                                  <p class="date">{{.Date.Format "Monday, Jan 2, 2006"}}</p>
+                                </div>
                               </a>
-                              <p>{{.Date.Format "2006-01-02"}}</p>
                             </div>
                           {{ end }}
                         </div>
@@ -70,13 +85,6 @@
           </div>
         </div>
       </div>
-      <!-- <ul>
-        {{ range .Data.Pages }}
-          <li>
-              <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-          </li>
-        {{ end }}
-      </ul> -->
       <!-- Footer-->
       {{ partial "footer.html" . }}
     </div>

@@ -26,15 +26,13 @@
         <div class="content_wrapper clearfix">
           <div class="sections_group">
             <div class="entry-content">
-              <div class="section" style="padding-top: 50px; padding-bottom: 50px; background-color:#ffbd1f; background-image:url(/images/home_software_pattern.png); background-repeat:repeat; background-position:center;">
-                <div class="section_wrapper clearfix">
-                  <div class="items_group clearfix">
-                    <h2 class="subheader" style="margin: 0;">{{.Params.Title}}</h2>
-                    <label class="b_auther">Written by: {{.Params.auther}}</label>
-                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                      <div class="image_wrapper"><img class="scale-with-grid" src="images/home_software_subheader_sep.png" alt="" width="137" height="8" />
-                      </div>
-                    </div>
+              <!--  -->
+              <div class="blog_header" style="margin-top: 45px;">
+                <div class="_header">
+                  <h1 style="font-size: 44px;line-height: 54px;">{{ .Params.Title }}</h1>
+                  <div class="blog_details">
+                    <span class="_auther">{{ .Params.auther }}</span>, &nbsp;
+                    <span class="_date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
                   </div>
                 </div>
               </div>
@@ -48,34 +46,30 @@
                           {{.Content}}
                         </div>
                       </div>
-                      <div class="blog_assets">
-                        <div class="assets">
-                          <!--  -->
-                          {{ if .Params.tags }}
-                            <div>
-                            <h3>Tags</h3>
-                              {{ range $index, $tag := .Params.tags }}
-                                {{ if gt $index 0 }}, {{ end }}
-                                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
-                              {{ end }}
-                            </div>
-                          {{ end }}
-                          <!--  -->
-                          {{ if .Params.categories }}
-                            <br>
-                            <br>
-                            <hr>
-                            <br>
-                            <div>
-                              <h3>Categories</h3>
-                              {{ range $index, $category := .Params.categories }}
-                                  {{ if gt $index 0 }}, {{ end }}
-                                  <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
-                              {{ end }}
-                            </div>
-                          {{ end }}
-                          <!--  -->
-                        </div>
+                    </div>
+                    <div class="blog_assets">
+                      <div class="assets">
+                        <hr>
+                        {{ if .Params.tags }}
+                          <div>
+                          <h4>Tags</h4>
+                            {{ range $index, $tag := .Params.tags }}
+                              {{ if gt $index 0 }}, {{ end }}
+                              <a  class="blog_category" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+                            {{ end }}
+                          </div>
+                        {{ end }}
+
+                        {{ if .Params.categories }}
+                          <br>
+                          <hr>
+                          <div>
+                            <h4>Categories</h4>
+                            {{ range $index, $category := .Params.categories }}
+                              <a class="blog_category" href='{{ "/categories/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
+                            {{ end }}
+                          </div>
+                        {{ end }}
                       </div>
                     </div>
                   </div>

@@ -1,0 +1,6 @@
+{{$relativePath:= .RelPermalink}}
+{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  {{$_path:= printf "%s/" $name}}
+  {{$path:= printf "/tags/%s" $_path}}
+  <a class="blog_category {{ if eq $path $relativePath }}active{{ end }}" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+{{ end }}

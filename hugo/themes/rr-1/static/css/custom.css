@@ -107,32 +107,39 @@ ul.footer_links li {
 
 .blog {
   display: flex;
+  justify-content: center;
 }
 
 .blog .content {
   width: 680px;
+  max-width: 680px;
+}
+
+.blog .content img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blog .content *{
   font-size: 18px;
   line-height: 1.7;
+  font-family: sans-serif;
 }
 
-.blog .blog_assets {
-  width: 540px;
+.blog_assets {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-.blog .blog_assets .assets {
-  width: 300px;
-  max-width: 300px;
+.blog_assets .assets {
+  width: 680px;
+  max-width: 680px;
 }
 
 .blogs_list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 ._blog{
@@ -142,6 +149,7 @@ ul.footer_links li {
   border-radius: 3px;
   background-color: white;
   border: 1px solid #e2e1e1;
+  border-bottom: 3px solid #00cdc1;
 }
 
 ._blog * {
@@ -161,12 +169,12 @@ ul.footer_links li {
 
 #Content .blogs_list img {
   max-width: 100%;
-  max-height: 100%;
 }
 
 .bimage {
   height: 300px;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #efefef;
@@ -175,7 +183,6 @@ ul.footer_links li {
 ._blog .blog_info {
   padding: 15px;
   text-align: left;
-  border-bottom: 3px solid #00cdc1;
 }
 
 ._blog .blog_info .title {
@@ -205,6 +212,60 @@ ul.footer_links li {
 }
 
 .b_auther {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.blog_categories {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.blog_categories h4{
+  margin-bottom: 5px;
+}
+
+.blog_category {
+  color: #cdcdcd;
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 5px;
+  align-items: center;
+}
+
+.blog_category:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #00cdc1;
+  background-color: #00cdc1;
+}
+
+.blog_category.active {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #00cdc1;
+  background-color: #00cdc1;
+}
+
+.blog_header {
+  display: flex;
+  justify-content: center;
+}
+
+.blog_header ._header{
+  width: 680px;
+  max-width: 680px;
+}
+
+.blog_details {
+  display: flex;
+  color: #707070;
   font-size: 16px;
   text-transform: capitalize;
 }

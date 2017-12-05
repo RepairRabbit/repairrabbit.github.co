@@ -31,15 +31,20 @@
                   <div class="items_group clearfix">
                     <!-- One full width row-->
                     <div class="column_attr align_center">
-                      <h2 class="subheader" style="margin: 0;">{{ .Title }}</h2>
+                      <h2 class="subheader" style="margin: 0;font-weight: normal !important;">{{ .Title }}</h2>
                     </div>
                   </div>
                 </div>
               </div>
               <!--  -->
+              <div class="blog_categories">
+                {{ partial "categories.html" . }}
+              </div>
+              <!--  -->
               <div class="section" style="padding-top: 45px; padding-bottom:45px;background-color: #fbfbfb;">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
+                    <!--  -->
                     <!-- One Second (1/2) Column -->
                     <div class="column one column_column ">
                       <div class="column_attr">
@@ -65,11 +70,6 @@
                                         {{ .Summary }}
                                     {{ end }}
                                   </p>
-                                  <p class="auther">
-                                    <span style="text-transform: lowercase;">written by</span><br>
-                                    {{ .Params.auther }}
-                                  </p>
-                                  <p class="date">{{.Date.Format "Monday, Jan 2, 2006"}}</p>
                                 </div>
                               </a>
                             </div>

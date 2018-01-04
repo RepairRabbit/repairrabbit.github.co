@@ -1338,7 +1338,7 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 	position: absolute;
 	left: -10px;
 	top: 2px;
-	background-image: url(../images/top_bar_right_shadow.png);
+	/*background-image: url(../images/top_bar_right_shadow.png);*/
 	background-repeat: repeat-y;
 	-moz-transform: skewX(0deg) skewY(-25deg);
 	-webkit-transform: skewX(0deg) skewY(-25deg);

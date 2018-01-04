@@ -5,7 +5,7 @@
 Screen Stylesheet
 
 version:   	5.0.0
-date:      	29/10/15
+date:      	18/03/15
 author:		themepunch
 email:     	info@themepunch.com
 website:   	http://www.themepunch.com
@@ -118,10 +118,10 @@ website:   	http://www.themepunch.com
 .tp-simpleresponsive img,
 .rev_slider img{
 	max-width:none !important;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
+	-moz-transition: none 0;
+	-webkit-transition: none 0;
+	-o-transition: none 0;
+	transition: none 0;
 	margin:0px;
 	padding:0px;
 	border-width:0px;
@@ -177,32 +177,12 @@ website:   	http://www.themepunch.com
 	list-style:none !important;
 }
 
-.rev_slider li.tp-revslider-slidesli {
-    position: absolute !important;
-}
-
-
-.tp-caption .rs-untoggled-content { display:block;}
-.tp-caption .rs-toggled-content { display:none;}
-
-.rs-toggle-content-active.tp-caption .rs-toggled-content { display:block;}
-.rs-toggle-content-active.tp-caption .rs-untoggled-content { display:none;}
-
 .rev_slider .tp-caption,
 .rev_slider .caption 	{ 
 	position:relative;  
 	visibility:hidden; 
 	white-space: nowrap;
 	display: block;
-}
-
-
-.rev_slider .tp-mask-wrap .tp-caption,
-.rev_slider .tp-mask-wrap *:last-child,
-.wpb_text_column .rev_slider .tp-mask-wrap .tp-caption,
-.wpb_text_column .rev_slider .tp-mask-wrap *:last-child{
-	margin-bottom:0;
-
 }
 
 	
@@ -236,12 +216,7 @@ website:   	http://www.themepunch.com
 	-webkit-font-smoothing: antialiased !important;
 }
 
-.tp-caption.tp-layer-selectable {
-	-moz-user-select: all;
-	-khtml-user-select: all;
-	-webkit-user-select: all;
-	-o-user-select: all;	
-}
+
 
 .tp-forcenotvisible,
 .tp-hide-revslider,
@@ -256,9 +231,6 @@ website:   	http://www.themepunch.com
 .rev_slider video {
 	max-width: none !important
 }
-
-
-
 
 
 
@@ -475,7 +447,6 @@ img.tp-slider-alternative-image	{
 .rs-fullvideo-cover					{	width:100%;height:100%;top:0px;left:0px;position: absolute; background:transparent;z-index:5;}
 
 
-.rs-background-video-layer video::-webkit-media-controls { display:none !important;}
 
 
 /********************************
@@ -568,11 +539,11 @@ img.tp-slider-alternative-image	{
 	height:30px;
 	cursor:pointer;
 	color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
-	font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
+	background:url(../images/gradient/g30.png) repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
 	text-decoration:none;
 }
 
-.tp-button.big	{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; }
+.tp-button.big	{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(../images/gradient/g40.png) repeat-x top}
 
 
 .purchase:hover,
@@ -611,7 +582,7 @@ img.tp-slider-alternative-image	{
 .rev-btn.rev-uppercase,
 .rev-btn.rev-uppercase:visited			{ 	text-transform: uppercase; letter-spacing: 1px; font-size: 15px; font-weight: 900; }
 
-.rev-btn.rev-withicon i					{ 	font-size: 15px; font-weight: normal; position: relative; top: 0px; -webkit-transition: all 0.2s ease-out !important; -moz-transition: all 0.2s ease-out !important; -o-transition: all 0.2s ease-out !important; -ms-transition: all 0.2s ease-out !important; margin-left:10px !important;}
+.rev-btn.rev-withicon i					{ 	font-size: 15px; font-weight: normal; position: relative; top: 0px; -webkit-transition: all 0.2s ease-out !important; -moz-transition: all 0.2s ease-out !important; -o-transition: all 0.2s ease-out !important; -ms-transition: all 0.2s ease-out !important; margin-left:10px !importan;}
 
 .rev-btn.rev-hiddenicon i				{ 	font-size: 15px; font-weight: normal; position: relative; top: 0px; -webkit-transition: all 0.2s ease-out !important; -moz-transition: all 0.2s ease-out !important; -o-transition: all 0.2s ease-out !important; -ms-transition: all 0.2s ease-out !important; opacity: 0; margin-left:0px !important; width:0px !important;  }
 .rev-btn.rev-hiddenicon:hover i			{   opacity: 1 !important; margin-left:10px !important; width:auto !important;}
@@ -775,6 +746,7 @@ img.tp-slider-alternative-image	{
 .rev-scroll-btn > *:focus,
 .rev-scroll-btn > *:active,
 .rev-scroll-btn > *.active {
+	opacity: 0.8;
 	filter: alpha(opacity=80);
 }
 
@@ -850,7 +822,7 @@ img.tp-slider-alternative-image	{
 
 .rev-cbutton-light-sr	{		
 	color: #333;  	
-	border-radius: 3px;		
+	border-radius: 3;		
 	background-color: rgba(255,255,255, 0.75);
 }
 
@@ -908,68 +880,6 @@ img.tp-slider-alternative-image	{
 .tp-shape {	width:100%;height:100%;}
 
 
-
-/*********************************************
--	WOOCOMMERCE STYLES	-
-***********************************************/
-
-.tp-caption .rs-starring				{	display: inline-block}
-.tp-caption .rs-starring .star-rating	{	float: none;}
-
-.tp-caption .rs-starring .star-rating {
-	color: #FFC321 !important;
-	display: inline-block;
-    vertical-align: top;
-}
-
-.tp-caption .rs-starring .star-rating, 
-.tp-caption .rs-starring-page .star-rating {	
-	position: relative;
-	height: 1em;
-	
-	width: 5.4em;
-	font-family: star;
-}
-
-.tp-caption  .rs-starring .star-rating:before, 
-.tp-caption  .rs-starring-page .star-rating:before {
-	content: "\73\73\73\73\73";
-	color: #E0DADF;
-	float: left;
-	top: 0;
-	left: 0;
-	position: absolute;
-}
-
-.tp-caption .rs-starring .star-rating span {
-	overflow: hidden;
-	float: left;
-	top: 0;
-	left: 0;
-	position: absolute;
-	padding-top: 1.5em;
-	font-size: 1em !important;
-}
-
-.tp-caption .rs-starring .star-rating span:before,
-.tp-caption .rs-starring .star-rating span:before {
-	content: "\53\53\53\53\53";
-	top: 0;
-	position: absolute;
-	left: 0;
-}
-
-.tp-caption .rs-starring .star-rating {
-	color: #FFC321 !important;
-}
-
-
-.tp-caption .rs-starring .star-rating, 
-.tp-caption .rs-starring-page .star-rating {
-	
-	font-size: 1em !important;
-	font-family: star;
-}
 
 
 /******************************
@@ -1171,7 +1081,6 @@ img.tp-slider-alternative-image	{
 .tp-tab,
 .tp-thumb 						{	cursor: pointer; position:absolute;opacity:0.5;  box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
 
-.tp-arr-imgholder,
 .tp-videoposter,
 .tp-thumb-image,
 .tp-tab-image					{	background-position: center center; background-size:cover;width:100%;height:100%; display:block; position:absolute;top:0px;left:0px;}
@@ -1194,18 +1103,13 @@ img.tp-slider-alternative-image	{
 .tp-bannertimer					{	background:#000; background:rgba(0,0,0,0.15); height:5px;}
 
 
-.tparrows						{	cursor:pointer; background:#000; background:rgba(0,0,0,0.5); width:40px;height:40px;position:absolute; display:block; z-index:1000; }
+.tparrows						{	cursor:pointer; background:#000; background:rgba(0,0,0,0.5); width:40px;height:40px;position:absolute; display:block; z-index:100; }
 .tparrows:hover 				{	background:#000;}
 .tparrows:before				{	font-family: "revicons"; font-size:15px; color:#fff; display:block; line-height: 40px; text-align: center;}
 .tparrows.tp-leftarrow:before	{	content: '\e824'; }
 .tparrows.tp-rightarrow:before	{	content: '\e825'; }
 
 
-/***************************
-	- 3D SHADOW MODE -
-***************************/
-
-.dddwrappershadow { box-shadow:0 45px 100px rgba(0, 0, 0, 0.4);}
 
 /*******************
 	- DEBUG MODE -
@@ -1225,4 +1129,4 @@ img.tp-slider-alternative-image	{
 .hginfo 					   { 	position:absolute;top:-2px;left:-2px;color:#e74c3c;font-size:12px;font-weight:600; background:#000;padding:2px 5px;}
 .indebugmode .tp-caption:hover { 	border:1px dashed #c0392b !important;}
 .helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;peft:0px;z-index:0 }
-#revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
+

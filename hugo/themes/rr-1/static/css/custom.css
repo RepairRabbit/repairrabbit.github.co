@@ -9,6 +9,10 @@
   flex-wrap: wrap;
 }
 
+.j_c_c {
+  justify-content: center;
+}
+
 .al_center {
   align-items: center;
 }
@@ -66,13 +70,14 @@ ul.footer_links li {
   display: flex;
   padding: 10px;
   flex-wrap: wrap;
-  min-width: 215px;
+  min-width: 135px;
   text-align: center;
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #f2f1f2;
+  background-color: white;
+  color: #606060;
 }
 
 .technologies .tech:hover {
@@ -267,4 +272,59 @@ ul.footer_links li {
   color: #707070;
   font-size: 16px;
   text-transform: capitalize;
+}
+
+.pricing-box .plan-header .price > span {
+  font-size: 99px;
+  line-height: 99px;
+}
+
+.pricing-box .plan-header .price sup.currency {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 1239px) {
+  #Top_bar #menu ul li {
+    border-top: 1px solid #eee;
+  }
+}
+
+.list-group-item {
+  min-width: 210px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.list-group-item:hover {
+  background-color: #ffbd1f;
+  border-color: #ffbd1f;
+  color: #303030;
+}
+
+.list-group-item * {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.list-group-item h3 {
+  font-size: 18px;
+  /*color: #999;*/
+  /*font-weight: 300;*/
+}
+
+.list-group-item:hover h3{
+  font-weight: 400;
+  color: black;
+}
+
+.menu {
+  box-shadow: 0px 5px 20px #aaa;
 }

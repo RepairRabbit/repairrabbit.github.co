@@ -512,7 +512,7 @@ a.button, a.tp-button, button, input[type="submit"], input[type="reset"], input[
 	overflow: hidden;
 	-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .03);
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .03);
-	background-image: url(../images/box_shadow_button.png);
+	/*background-image: url(../images/box_shadow_button.png);*/
 	background-repeat: repeat-x;
 }
 a.button_js {

@@ -910,7 +910,7 @@ ul.footer_links {
 	margin-left: 7%
 }
 ul.footer_links li {
-	list-style-image: url("../images/home_software_footer_links.png");
+	/*list-style-image: url("../images/home_software_footer_links.png");*/
 	padding: 5px 0 5px 5px
 }
 ul.list_check li, li.list_check {
@@ -961,7 +961,7 @@ blockquote {
 	padding: 30px
 }
 #Footer .footer_copy {
-	background: #21293f url(../images/home_software_footer_bg.png) repeat-x left bottom;
+	/*background: #21293f url(../images/home_software_footer_bg.png) repeat-x left bottom;*/
 	border: 0
 }
 #Footer .footer_copy .one {

@@ -1,8 +1,0 @@
-baseURL = "http://localhost:1313"
-languageCode = "en-us"
-title = "Repair Rabbit"
-themesDir = "themes"
-theme = "rr-1"
-[taxonomies]
-  tag = "tags"
-  category = "categories"

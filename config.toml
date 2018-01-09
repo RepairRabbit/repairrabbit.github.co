@@ -7,6 +7,7 @@ theme = "rr-1"
 [taxonomies]
   tag = "tags"
   category = "categories"
-
+[params]
+  tagLine = "Let’s scale your repairing business with our ready to use system"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-112062782-1"

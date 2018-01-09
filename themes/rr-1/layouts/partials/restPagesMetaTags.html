@@ -1,19 +1,19 @@
 {{ $baseUrl:= trim .Site.BaseURL "/" }}
 {{ $image := printf "%s%s" $baseUrl .Params.image }}
 
-<title>{{ .Title }} - Repair Rabbit</title>
+<title>{{ .Title }} - {{.Site.Title}}</title>
 <meta name="description" content="{{ .Summary }}">
 <meta name="author" content="{{ .Params.auther }}">
 
 <meta property="og:url"           content="{{.Permalink}}" />
 <meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{ .Title }} - Repair Rabbit" />
-<meta property="og:description"   content="A Care Center Software for no matter what you repair." />
+<meta property="og:title"         content="{{ .Title }} - {{.Site.Title}}" />
+<meta property="og:description"   content="{{.Site.Params.tagLine}}" />
 <meta property="og:image"         content='{{$image}}' />
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@repairRabbit">
 <meta name="twitter:creator" content="@repairRabbit">
-<meta name="twitter:title" content="{{ .Title }} - Repair Rabbit">
+<meta name="twitter:title" content="{{ .Title }} - {{.Site.Title}}">
 <meta name="twitter:description" content="{{ .Summary }}">
 <meta name="twitter:image" content="{{$image}}">

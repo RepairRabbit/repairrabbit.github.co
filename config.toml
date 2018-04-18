@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "http://repairrabbit.gitlab.io/"
 languageCode = "en-us"
-title = "Repair Rabbit"
+title = "RepairRabbit"
 themesDir = "themes"
 theme = "rr-1"
 [taxonomies]

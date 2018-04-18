@@ -328,3 +328,13 @@ ul.footer_links li {
 .menu {
   box-shadow: 0px 5px 20px #aaa;
 }
+
+.list_item .list_right .desc {
+  color: #505050;
+  font-size: 16px;
+}
+
+.list_item .list_right h4 {
+  font-weight: normal;
+  font-size: 23px;
+}

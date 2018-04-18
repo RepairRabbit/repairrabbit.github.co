@@ -106,4 +106,28 @@
       $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 100}, 1000);
     }
   });
+
+  // model hide/show
+  $(".download-button").click(function(){
+    $(".model-container").show();
+  });
+
+  $(".model-action-button").click(function(){
+    $(".model-container").hide();
+  });
+
+  // show order model if order query params exists
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  var isQueryParamExist = getParameterByName('order');
+  if (isQueryParamExist) {
+    $(".model-container").show();
+  }
 </script>

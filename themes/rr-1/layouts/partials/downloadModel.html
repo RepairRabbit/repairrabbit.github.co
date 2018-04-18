@@ -1,0 +1,188 @@
+<style type="text/css">
+.model-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 11111;
+  overflow: auto;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.model-container * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.model {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 767px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.model-header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.model-container .model-header h1 {
+  font-size: 34px;
+}
+
+.model-container .model-header button {
+  float: right;
+  margin-top: 5px;
+}
+
+.model-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #ddd;
+}
+
+.model-body {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #707070;
+}
+
+.form-group input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.summary {
+  padding: 15px 0;
+}
+
+.summary .total {
+  float: right;
+}
+
+.summary .total table {
+  float: right;
+}
+
+.summary .total table td {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.summary .total table tr:first-child {
+  border-top: 1px solid #ddd !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.email-require-alert {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #faebd7;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+#orderBtn[disabled] {
+  background-color: #cfcfcf;
+}
+</style>
+<div class="model-container">
+  <form action="http://37.139.15.5:8080/checkouts" method="post" target="_blank">
+    <div class="model">
+      <div class="model-header">
+        <h1>
+          Order Details
+          <button
+            class="model-action-button"
+            style="
+            border: none;
+            outline: none;
+            font-size: 14px;
+            box-shadow: none;
+            padding: 4px 5px;
+            border-radius: 20px;
+            "><img src="/images/close.svg" alt="close model" /></button>
+        </h1>
+      </div>
+      <div class="model-body">
+        <div class="email-require-alert">Make sure you are using working email, because after succesful order, we will send you download link to mentioned email.</div>
+        <h4>Basic Details</h4>
+        <br>
+        <div class="form-group">
+          <label>Full Name:</label>
+          <input type="text" name="fullname" required="true" />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" name="email" required="true" />
+        </div>
+        <div class="form-group">
+          <label>Domain:</label>
+          <input type="text" name="license_domain" required="true" pattern="^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$" placeholder="ex: repairrabbit.co" />
+        </div>
+        <div class="summary">
+          <div class="total">
+            <h4>Summary</h4>
+            <br>
+            <table>
+              <tr>
+                <td class="text-right">Price</td>
+                <td class="text-right">300$</td>
+              </tr>
+              <tr>
+                <td class="text-right">Discount</td>
+                <td class="text-right">30%</td>
+              </tr>
+              <tr>
+                <td class="text-right">
+                  <strong style="color: #00cdc1;font-size: 24px;">Sub Total</strong>
+                </td>
+                <td class="text-right">
+                  <strong style="color: #00cdc1;font-size: 24px;">170$</strong>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        <br>
+        <div>
+          <label style="font-size: 18px;font-weight: normal;">
+            <input type="checkbox" onchange="document.getElementById('orderBtn').disabled = !this.checked;"> I have a read the <a href="/license-agreement" target="_blank" required>terms license agreement</a> <br>
+          </label>
+        </div>
+      </div>
+      <div class="model-footer">
+        <button id="orderBtn" type="submit" style="
+          outline: none;
+          border: none;
+          box-shadow: none;
+          font-size: 22px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          "
+          disabled="true">Order</button>
+      </div>
+    </div>
+  </form>
+</div>

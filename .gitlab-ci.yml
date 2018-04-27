@@ -1,13 +1,4 @@
-image: alpine:3.5
-
-before_script:
-  - apk update && apk add openssl git
-  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Linux-64bit.tar.gz
-  - echo "3fc43b23a35dfe5290196bd0fc01f13f  hugo_0.19_Linux-64bit.tar.gz" | md5sum -c
-  - tar xf hugo_0.19_Linux-64bit.tar.gz --strip-components=1 && mv hugo_0.19_linux_amd64 hugo && cp ./hugo /usr/bin
-  - hugo version
-  # Uncomment the next line if your theme is in a git submodule
-  # - git submodule update --init
+image: registry.gitlab.com/pages/hugo:0.40.1
 
 test:
   script:

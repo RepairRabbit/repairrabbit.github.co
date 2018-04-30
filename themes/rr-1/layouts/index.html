@@ -7,11 +7,40 @@
 <html class="no-js">
   <!--<![endif]-->
   {{ partial "header.html" . }}
+
+  <style>
+
+    #myVideo {
+      position: fixed;
+      min-width: 1864px;
+      z-index: -1;
+      top: -125px;
+      -webkit-filter: grayscale(1) brightness(0.65) contrast(1.05);
+      filter: grayscale(1) brightness(0.65) contrast(1.05);
+    }
+
+    .background-wrapper {
+      height: 1491.19px;
+      width: 100%;
+      position: fixed;
+      z-index: -1;
+      top: -218px;
+      /*background-color: rgba(0, 0, 0, 0.7);*/
+    }
+
+  </style>
+
   <body class="template-slider style-simple layout-full-width mobile-tb-left no-content-padding header-classic minimalist-header sticky-header sticky-white ab-hide subheader-title-left menuo-right menuo-no-borders footer-copy-center">
+
+    <video  autoplay loop id="myVideo">
+      <source src="videos/1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
     <!-- Main Theme Wrapper -->
-    <div id="Wrapper">
+    <div id="Wrapper" style="background-color: transparent;">
       <!-- Header Wrapper -->
-      <div id="Header_wrapper">
+      <div id="Header_wrapper" style="background-color: transparent;">
         <!-- Header -->
         <header id="Header">
           <!-- Header -  Logo and Menu area -->
@@ -23,7 +52,7 @@
                 <ul>
                   <li data-index="rs-1" data-transition="random" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                     <!-- <img src="http://be.beantownthemes.com/html/plugins/rs-plugin/images/transparent.png" alt="" width="545" height="583" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
-                    <div class="tp-caption mfnrssoftwarelargelight tp-resizeme" id="slide-1-layer-1" data-x="95" data-y="160" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
+                    <div class="tp-caption mfnrssoftwarelargelight tp-resizeme" id="slide-1-layer-1" data-x="95" data-y="210" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
                       data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 5; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: ; color: rgba(255, 255, 255, 1.00);padding:0 0 0 0;border-color:rgba(0, 0, 0, 1.00);border-radius:0 0 0 0;text-align: center;">
                       Let’s enhance your<br>
                       Repairing Business<br>
@@ -33,18 +62,9 @@
                     <div class="tp-caption tp-resizeme" id="slide-1-layer-2" data-x="right" data-hoffset="10" data-y="center" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:600;e:Power3.easeInOut;"
                       data-transform_out="auto:auto;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6; line-height: 22px;padding:0 0 0 0;border-radius:0 0 0 0;"><img src="/images/features.png" alt="RepairRabbit dashboard page" width="797" height="603" data-no-retina>
                     </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-3" data-x="220" data-y="435" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
+                    <div class="tp-caption tp-resizeme" id="slide-1-layer-3" data-x="220" data-y="465" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
                       data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);padding:0 0 0 0;border-radius:0 0 0 0;">
                       <a class="button button_js download-button" style=" background-color:#ffbd1f !important; color:#09142f;" href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit"><span class="button_label">Contact Us</span></a>
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-4" data-x="30" data-y="center" data-voffset="140" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:600;e:Power3.easeInOut;"
-                      data-transform_out="auto:auto;s:300;" data-start="1200" data-responsive_offset="on" style="z-index: 8; line-height: 22px;padding:0 0 0 0;border-radius:0 0 0 0;"><img src="/images/home_software_slide_1_hr.png" alt="" width="486" height="1" data-no-retina>
-                    </div>
-                    <div class="tp-caption mfnrssoftwaresmalllight tp-resizeme" id="slide-1-layer-5" data-x="190" data-y="540" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
-                      data-start="1400" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 9; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 18px; line-height: 25px; font-weight: ; color: rgba(255, 255, 255, 1.00);font-family:Arial;padding:0 0 0 0;border-color:rgba(0, 0, 0, 1.00);border-radius:0 0 0 0;">
-                      <a style="color: #fff;" href="/#features">Features</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a style="color: #fff;" href="/#pricing">Pricing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <!-- <a style="color: #fff;" href="">FAQ</a> -->
                     </div>
                   </li>
                 </ul>
@@ -64,7 +84,7 @@
                 <div class="section_wrapper clearfix">
                     <div class="items_group clearfix">
                         <div class="column_attr align_center">
-                          <h2>About Us</h2>
+                          <h2>About us</h2>
                         </div>
                         <div class="column one column_divider ">
                           <div style="
@@ -74,21 +94,21 @@
                             color: #303030;
                             line-height: 1.7;
                           ">
-                            RepairRabbit helps you to streamline your Repairing business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
+                            RepairRabbit helps you to streamline your Repairing Business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
                           </div>
                         </div>
                     </div>
                 </div>
               </div>
               <!--  -->
-              <div class="section" style="padding-top:100px; padding-bottom:60px;background-color: #f1f7fb;" id="features">
+              <div class="section" style="padding-top:60px; padding-bottom:60px;background-color: #f1f7fb;" id="features">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <!-- One full width row-->
                     <div class="column one column_column ">
                       <div class="column_attr align_center">
-                        <h3 style="color: #00cdc1; margin-bottom: 5px;">MANAGE YOUR REPAIR SHOP LIKE A PRO</h3>
-                        <h2>Unique Features Specially Handcrafted For You</h2>
+                        <h2>Unique features specially handcrafted for you</h2>
+                        <h3 style="color: #808080;">manage your repairing business like a pro</h3>
                       </div>
                     </div>
                     <!-- One Third (1/3) Column -->
@@ -170,7 +190,7 @@
                           <div class="list_right">
                             <h4>Customer dashboard</h4>
                             <div class="desc">
-                              Customer can view their appointment and ticket progress online.
+                              Customers can view their appointment and ticket progress online.
                             </div>
                           </div>
                         </div>
@@ -186,7 +206,7 @@
                           <div class="list_right">
                             <h4>Employee</h4>
                             <div class="desc">
-                              Manage your employee and their leaves.
+                              Manage your employees and their leaves.
                             </div>
                           </div>
                         </div>
@@ -249,17 +269,17 @@
                 </div>
               </div>
               <!--  -->
-              <div class="section" style="padding-top:70px; padding-bottom:30px;" id="pricing">
+              <div class="section" style="padding-top:60px; padding-bottom:60px;" id="pricing">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <div class="column_attr align_center">
-                      <h3 style="color: #00cdc1; margin-bottom: 5px;text-transform: uppercase;">All features in one plan with one price</h3>
-                      <h2>One Time Pricing</h2>
+                      <h2>One time pricing</h2>
+                      <!-- <h3 style="color: #808080;">all features in one plan with one price</h3> -->
                     </div>
                     <br>
                     <!-- One Fourth (1/4) Column -->
                     <div class="clearfix">
-                      <div class="column one-second column_pricing_item" style="margin: 0 auto;max-width: 300px;padding-bottom:45px;float: none;">
+                      <div class="column one-second column_pricing_item" style="margin: 0 auto;max-width: 300px;float: none;">
                         <div class="pricing-box pricing-box-featured pricing-box-box" style="background-color: #1dc6bc;border-radius: 5px; position: relative;">
                           <div class="plan-inside" style="font-size: 16px;color: white">
                             All features in one plan with one price. Manage your business effectively with <br>
@@ -267,8 +287,8 @@
                               <li></li>
                               <li>Book unlimited repairs</li>
                               <li>Unlimited products or categories</li>
-                              <li>unlimited customers</li>
-                              <li>unlimited invoices</li>
+                              <li>Unlimited customers</li>
+                              <li>Unlimited invoices</li>
                               <li></li>
                             </ul>
                             Please contact us to get the quote<br>
@@ -285,7 +305,6 @@
                               <span class="button_label">Contact Us</span>
                             </a>
                           </div>
-                          <br>
                         </div>
                       </div>
                     </div>
@@ -293,30 +312,30 @@
                 </div>
               </div>
               <!--  -->
-              <div class="section" style="padding-top:70px; padding-bottom:25px;background-color:#f1f7fb;">
+              <div class="section" style="padding-top:60px; padding-bottom:60px;background-color:#f1f7fb;">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <!-- Two Third (2/3) Column -->
-                    <div class="column two-third column_column ">
+                    <div class="column two-third column_column" style="margin-bottom: 0;">
                       <div class="column_attr">
-                        <div style="border-right: 1px dotted #9c854d; padding: 15px 10% 15px 0;">
-                          <h2 style="color: #1dc6bc;">Order a Customization</h2>
-                          <h3 style="color: #5c4f3b;">Repair Shop online system fully customized for your business needs. We have a great team of professionals working for you.</h3>
+                        <div style="border-right: 1px dotted #9c854d; padding: 0 10% 0 0;">
+                          <h2 style="color: #1dc6bc;">Customization</h2>
+                          <h3 style="color: #5c4f3b;margin-bottom: 0;">RepairRabbit online system fully customized for your business needs. We have a great team of professionals working for you.</h3>
                         </div>
                       </div>
                     </div>
                     <!-- One Third (1/3) Column -->
-                    <div class="column one-third column_column">
+                    <div class="column one-third column_column" style="margin-bottom: 0;">
                       <div class="column_attr align_center">
-                        <hr class="no_line hrmargin_b_30" />
                         <p>
-                          Please contact us for your specific business need, we happy to here and make your business grow
+                          Please contact us for your specific business need, we are happy to hear and make your business grow
                         </p>
                         <a class="button button_right button_large button_js" href="mailto:contact@repairrabbit.co?subject=Need Customization of RepairRabbit" style="
                           background-color: rgb(255, 189, 31) !important;
                           color: rgb(9, 20, 47);
                           font-size: 18px;
                           font-weight: normal;
+                          margin-bottom: 0;
                         ">
                           <span class="button_label">Contact Us</span>
                         </a>
@@ -326,12 +345,12 @@
                 </div>
               </div>
               <!--  -->
-              <div class="section" style="padding-top:120px; padding-bottom:120px;" id="business">
+              <div class="section" style="padding-top:60px; padding-bottom:60px;" id="business">
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <div class="column_attr align_center">
-                      <h3 style="color: #00cdc1; margin-bottom: 5px;text-transform: uppercase;">Businesses who can take advantage of repairrabbit</h3>
                       <h2>Businesses</h2>
+                      <h3 style="color: #808080;">businesses who can take advantages of RepairRabbit</h3>
                     </div>
                     <br>
                     <div class="display-flex j_c_c">
@@ -350,6 +369,10 @@
                         </li>
                       </ul>
                     </div>
+                    <!-- <br>
+                    <div style="text-align: center;">
+                      <h4>And So On ...</h4>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -359,14 +382,14 @@
         </div>
       </div>
       <!--  -->
-      <div class="section" style="padding-top:100px; padding-bottom:100px;background-color:#f1f7fb;">
+      <div class="section" style="padding-top: 60px; padding-bottom: 60px;background-color:#f1f7fb;">
         <div class="section_wrapper clearfix">
             <div class="items_group clearfix">
               <!-- One full width row-->
               <div class="column one column_column ">
                 <div class="column_attr align_center">
-                  <h3 style="color: #00cdc1; margin-bottom: 5px;">CUTTING AGE TECHNOLOGIES ON WHICH REPAIRRABBIT BUILT ON</h3>
-                <h2>Technologies</h2>
+                  <h2>Technologies</h2>
+                  <h3 style="color: #808080;">cutting age technologies on which repairrabbit built on</h3>
                 </div>
               </div>
               <!--  -->

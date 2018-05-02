@@ -8,6 +8,21 @@
   <!--<![endif]-->
   {{ partial "header.html" . }}
   <body class="template-slider style-simple layout-full-width mobile-tb-left no-content-padding header-classic minimalist-header sticky-header sticky-white ab-hide subheader-title-left menuo-right menuo-no-borders footer-copy-center">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.css">
+
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+
     <div id="Wrapper">
       <!-- Header Wrapper -->
       <div id="Header_wrapper">
@@ -36,11 +51,11 @@
                 <div class="section_wrapper clearfix">
                   <div class="items_group clearfix">
                     <div class="blog">
-                      <div class="content">
+                      <article class="content markdown-body">
                         <div>
                           {{.Content}}
                         </div>
-                      </div>
+                      </article>
                     </div>
                     <div class="blog_assets">
                       <div class="assets">
@@ -49,7 +64,6 @@
                           <div>
                           <h4>Tags</h4>
                             {{ range $index, $tag := .Params.tags }}
-                              {{ if gt $index 0 }}, {{ end }}
                               <a  class="blog_category" href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ . }}</a>
                             {{ end }}
                           </div>

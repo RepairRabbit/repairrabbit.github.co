@@ -2,7 +2,9 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-auther: ""
-image: "/images/default_blog_image.png"
+auther: "RepairRabbit"
+image: "/images/logo-with-letters.png"
+tags: []
+categories: []
 ---
 

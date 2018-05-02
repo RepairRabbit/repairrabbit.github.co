@@ -45,7 +45,7 @@
                         <div class="blogs_list">
                           {{ range .Data.Pages }}
                             <div class="_blog">
-                              <a href="{{.Permalink}}">
+                              <a href="{{.RelPermalink}}">
                                 <div class="bimage">
                                   {{ if .Params.image }}
                                     <img src="{{ .Params.image }}">

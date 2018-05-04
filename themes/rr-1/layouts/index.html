@@ -1,443 +1,242 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<!doctype html>
+<html lang="en">
   {{ partial "header.html" . }}
-
-  <style>
-
-    #myVideo {
-      position: fixed;
-      min-width: 1864px;
-      z-index: -1;
-      top: -125px;
-      -webkit-filter: grayscale(1) brightness(0.65) contrast(1.05);
-      filter: grayscale(1) brightness(0.65) contrast(1.05);
-    }
-
-    .background-wrapper {
-      height: 1491.19px;
-      width: 100%;
-      position: fixed;
-      z-index: -1;
-      top: -218px;
-      /*background-color: rgba(0, 0, 0, 0.7);*/
-    }
-
-  </style>
-
-  <body class="template-slider style-simple layout-full-width mobile-tb-left no-content-padding header-classic minimalist-header sticky-header sticky-white ab-hide subheader-title-left menuo-right menuo-no-borders footer-copy-center">
-
-    <video  autoplay loop id="myVideo">
-      <source src="videos/1.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-
-    <!-- Main Theme Wrapper -->
-    <div id="Wrapper" style="background-color: transparent;">
-      <!-- Header Wrapper -->
-      <div id="Header_wrapper" style="background-color: transparent;">
-        <!-- Header -->
-        <header id="Header">
-          <!-- Header -  Logo and Menu area -->
-          {{ partial "navbar.html" . }}
-          <!-- Revolution slider area-->
-          <div class="mfn-main-slider">
-            <div id="rev_slider_1_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container sections_style_1">
-              <div id="rev_slider_1_2" class="rev_slider fullwidthabanner tp-overflow-hidden" data-version="5.0.4.1">
-                <ul>
-                  <li data-index="rs-1" data-transition="random" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                    <!-- <img src="http://be.beantownthemes.com/html/plugins/rs-plugin/images/transparent.png" alt="" width="545" height="583" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina> -->
-                    <div class="tp-caption mfnrssoftwarelargelight tp-resizeme" id="slide-1-layer-1" data-x="95" data-y="210" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
-                      data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 5; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: ; color: rgba(255, 255, 255, 1.00);padding:0 0 0 0;border-color:rgba(0, 0, 0, 1.00);border-radius:0 0 0 0;text-align: center;">
-                      Let’s enhance your<br>
-                      Repairing Business<br>
-                      with our ready<br>
-                      to use system
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-2" data-x="right" data-hoffset="10" data-y="center" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:600;e:Power3.easeInOut;"
-                      data-transform_out="auto:auto;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6; line-height: 22px;padding:0 0 0 0;border-radius:0 0 0 0;"><img src="/images/features.png" alt="RepairRabbit dashboard page" width="797" height="603" data-no-retina>
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-3" data-x="220" data-y="465" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:600;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;"
-                      data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);padding:0 0 0 0;border-radius:0 0 0 0;">
-                      <a class="button button_js download-button" style=" background-color:#ffbd1f !important; color:#09142f;" href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit"><span class="button_label">Contact Us</span></a>
-                    </div>
-                  </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom flv_viz_hid"></div>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <!-- Main Content -->
-      <div id="Content">
-        <div class="content_wrapper clearfix">
-          <div class="sections_group">
-            <div class="entry-content">
-              <!--  -->
-              <div class="section" style="padding-top:60px; padding-bottom:60px;">
-                <div class="section_wrapper clearfix">
-                    <div class="items_group clearfix">
-                        <div class="column_attr align_center">
-                          <h2>About us</h2>
-                        </div>
-                        <div class="column one column_divider ">
-                          <div style="
-                            max-width: 655px;
-                            margin: 0 auto;
-                            font-size: 20px;
-                            color: #303030;
-                            line-height: 1.7;
-                          ">
-                            RepairRabbit helps you to streamline your Repairing Business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <!--  -->
-              <div class="section" style="padding-top:60px; padding-bottom:60px;background-color: #f1f7fb;" id="features">
-                <div class="section_wrapper clearfix">
-                  <div class="items_group clearfix">
-                    <!-- One full width row-->
-                    <div class="column one column_column ">
-                      <div class="column_attr align_center">
-                        <h2>Unique features specially handcrafted for you</h2>
-                        <h3 style="color: #808080;">manage your repairing business like a pro</h3>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/home_software_pricing_icon_3.png" alt="Easy to use handles" class="scale-with-grid" width="65" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Dashboard</h4>
-                            <div class="desc">
-                              Get an exclusive summary dashboard and see what’s going in your business.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/appoinment.png" alt="Comunicate with your teammades" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Appointment</h4>
-                            <div class="desc">
-                              Anyone can create a new appointment at their convenient time from any of their devices, it could be mobile/desktop and at their nearest location.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/ticket.png" alt="Share all kind of files" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Ticket</h4>
-                            <div class="desc">
-                              Ticket is your job sheet that contains everything for a particular repair.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Page devider -->
-                    <!-- One full width row-->
-                    <!-- <div class="column one column_divider ">
-                      <hr class="no_line" />
-                    </div> -->
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/inventory_tracking.png" alt="Create and manage schedules" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Inventory tracking</h4>
-                            <div class="desc">
-                              Tracking of different products at different location is possible, get required quantity information all the time, so you can order new at earliest.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/c_dashboard.png" alt="Measure everything with a few clicks" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Customer dashboard</h4>
-                            <div class="desc">
-                              Customers can view their appointment and ticket progress online.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/employee.png" alt="Customize in few steps" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Employee</h4>
-                            <div class="desc">
-                              Manage your employees and their leaves.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One full width row-->
-                      <!-- <div class="column one column_divider ">
-                        <hr class="no_line" />
-                      </div> -->
-                    <!--  -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/multi_store.png" alt="Customize in few steps" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Manage multiple stores in a single place</h4>
-                            <div class="desc">
-                              A-Z management of different store in a single system along with all employee leave/holidays.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="column one-second column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        <!-- Animated area -->
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/invoice.png" alt="Customize in few steps" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Invoicing</h4>
-                            <div class="desc">
-                              We have a unique workflow to generate invoice from ticket. As well as you can generate invoices for accessories.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <!-- <div class="column one-third column_list ">
-                      <div class="list_item lists_2 clearfix">
-                        Animated area
-                        <div class="animate" data-anim-type="zoomIn">
-                          <div class="list_left list_image"><img src="/images/features/export_data.png" alt="Customize in few steps" class="scale-with-grid" height="65" />
-                          </div>
-                          <div class="list_right">
-                            <h4>Export of data</h4>
-                            <div class="desc">
-                              You are not stuck in this system. You can export all the data in csv/excel format.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-                    <!--  -->
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-              <div class="section" style="padding-top:60px; padding-bottom:60px;" id="pricing">
-                <div class="section_wrapper clearfix">
-                  <div class="items_group clearfix">
-                    <div class="column_attr align_center">
-                      <h2>One time pricing</h2>
-                      <!-- <h3 style="color: #808080;">all features in one plan with one price</h3> -->
-                    </div>
-                    <br>
-                    <!-- One Fourth (1/4) Column -->
-                    <div class="clearfix">
-                      <div class="column one-second column_pricing_item" style="margin: 0 auto;max-width: 300px;float: none;">
-                        <div class="pricing-box pricing-box-featured pricing-box-box" style="background-color: #1dc6bc;border-radius: 5px; position: relative;">
-                          <div class="plan-inside" style="font-size: 16px;color: white">
-                            All features in one plan with one price. Manage your business effectively with <br>
-                            <ul>
-                              <li></li>
-                              <li>Book unlimited repairs</li>
-                              <li>Unlimited products or categories</li>
-                              <li>Unlimited customers</li>
-                              <li>Unlimited invoices</li>
-                              <li></li>
-                            </ul>
-                            Please contact us to get the quote<br>
-                          </div>
-                          <div class="plan-footer">
-                            <a class="button button_left button_theme button_js download-button" style="
-                              background-color: rgb(255, 189, 31) !important;
-                              border: 1px solid rgb(255, 189, 31) !important;
-                              color: rgb(9, 20, 47);
-                              box-shadow: none;
-                              font-size: 18px;
-                            "
-                            href="mailto:contact@repairrabbit.co?subject=Get the quotation of RepairRabbit Software" title="contact us">
-                              <span class="button_label">Contact Us</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-              <div class="section" style="padding-top:60px; padding-bottom:60px;background-color:#f1f7fb;">
-                <div class="section_wrapper clearfix">
-                  <div class="items_group clearfix">
-                    <!-- Two Third (2/3) Column -->
-                    <div class="column two-third column_column" style="margin-bottom: 0;">
-                      <div class="column_attr">
-                        <div style="border-right: 1px dotted #9c854d; padding: 0 10% 0 0;">
-                          <h2 style="color: #1dc6bc;">Customization</h2>
-                          <h3 style="color: #5c4f3b;margin-bottom: 0;">RepairRabbit online system fully customized for your business needs. We have a great team of professionals working for you.</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- One Third (1/3) Column -->
-                    <div class="column one-third column_column" style="margin-bottom: 0;">
-                      <div class="column_attr align_center">
-                        <p>
-                          Please contact us for your specific business need, we are happy to hear and make your business grow
-                        </p>
-                        <a class="button button_right button_large button_js" href="mailto:contact@repairrabbit.co?subject=Need Customization of RepairRabbit" style="
-                          background-color: rgb(255, 189, 31) !important;
-                          color: rgb(9, 20, 47);
-                          font-size: 18px;
-                          font-weight: normal;
-                          margin-bottom: 0;
-                        ">
-                          <span class="button_label">Contact Us</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-              <div class="section" style="padding-top:60px; padding-bottom:60px;" id="business">
-                <div class="section_wrapper clearfix">
-                  <div class="items_group clearfix">
-                    <div class="column_attr align_center">
-                      <h2>Businesses</h2>
-                      <h3 style="color: #808080;">businesses who can take advantages of RepairRabbit</h3>
-                    </div>
-                    <br>
-                    <div class="display-flex j_c_c">
-                      <ul class="list-group">
-                        <li class="list-group-item">
-                          <h3>Phone Repairing</h3>
-                        </li>
-                        <li class="list-group-item">
-                          <h3>Laptop Repairing</h3>
-                        </li>
-                        <li class="list-group-item">
-                          <h3>Accesories Repairing</h3>
-                        </li>
-                        <li class="list-group-item">
-                          <h3>Electronic Devices Repairing</h3>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- <br>
-                    <div style="text-align: center;">
-                      <h4>And So On ...</h4>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="section" style="padding-top: 60px; padding-bottom: 60px;background-color:#f1f7fb;">
-        <div class="section_wrapper clearfix">
-            <div class="items_group clearfix">
-              <!-- One full width row-->
-              <div class="column one column_column ">
-                <div class="column_attr align_center">
-                  <h2>Technologies</h2>
-                  <h3 style="color: #808080;">cutting age technologies on which repairrabbit built on</h3>
-                </div>
-              </div>
-              <!--  -->
-              <div class="column one column_divider">
-                <div class="technologies">
-                  <a href="http://www.php.net/" class="tech">
-                    <label>Php >= 5.6.*</label>
-                    <img src="/images/technologies/php.png">
-                  </a>
-                  <!--  -->
-                  <a href="https://laravel.com/docs/5.4/installation" class="tech">
-                    <label>Laravel @5.4.*</label>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="51" viewBox="0 0 84.1 57.6"><path fill="#FB503B" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path></svg>
-                  </a>
-                  <!--  -->
-                  <a class="tech" href="https://getcomposer.org/">
-                    <label>Composer >= 1.6.3</label>
-                    <img src="/images/technologies/composer.png">
-                  </a>
-                  <!--  -->
-                  <a href="https://www.mysql.com/" class="tech">
-                    <label>Mysql >= 5.7.17</label>
-                    <img src="/images/technologies/mysql.png">
-                  </a>
-                  <!--  -->
-                  <div class="tech">
-                    <label>Html5</label>
-                    <img src="/images/technologies/HTML5.png">
-                  </div>
-                  <!--  -->
-                  <div class="tech">
-                    <label>Css3</label>
-                    <img src="/images/technologies/css3.png">
-                  </div>
-                  <!--  -->
-                  <div class="tech">
-                    <label>Js</label>
-                    <img src="/images/technologies/js.png">
-                  </div>
-                  <!--  -->
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <!-- Footer-->
-      {{ partial "footer.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+    <!--  -->
+    <div class="video-container">
+      <video  autoplay loop id="video">
+        <source src="videos/3.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </div>
+    <!--  -->
+    <section class="heroUnit container py-5 text-center">
+      <div>
+        <h1 class="mt-5 mb-3 tagLine">
+          Let’s enhance your <span class="bc-y">repairing business</span>
+          <span class="lineBreak"><br></span>
+          with our ready to use system
+        </h1>
+        <a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit">
+          <button class="btn b-bc-y mb-5">Contact Us</button>
+        </a>
+      </div>
+      <div>
+        <img src="/images/features.png" alt="RepairRabbit dashboard page" />
+      </div>
+    </section>
+    <!--  -->
+    <div class="bg-white seprator"></div>
+    <!--  -->
+    <section class="aboutUs py-5">
+      <div class="container">
+        <h2 class="text-center">About us</h2>
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 des">
+            RepairRabbit helps you to streamline your Repairing Business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="features py-5 bg-light-blue" id="features">
+      <div class="container">
+        <h2 class="text-center">Unique features specially handcrafted for you</h2>
+        <h3 class="text-center">manage your repairing business like a pro</h3>
+        <div class="row mt-5">
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/home_software_pricing_icon_3.png" alt="Dashboard" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Dashboard</h4>
+              <p>Get an exclusive summary dashboard and see what’s going in your business.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/appoinment.png" alt="Appointment" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Appointment</h4>
+              <p>Anyone can create a new appointment at their convenient time from any of their devices, it could be mobile/desktop and at their nearest location.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/ticket.png" alt="Ticket" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Ticket</h4>
+              <p>Ticket is your job sheet that contains everything for a particular repair.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/inventory_tracking.png" alt="Inventory tracking" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Inventory tracking</h4>
+              <p>Tracking of different products at different location is possible, get required quantity information all the time, so you can order new at earliest.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/c_dashboard.png" alt="Customer dashboard" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Customer dashboard</h4>
+              <p>Customers can view their appointment and ticket progress online.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/employee.png" alt="Employee" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Employee</h4>
+              <p>Manage your employees and their leaves.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/multi_store.png" alt="Manage multiple stores in a single place" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Manage multiple stores in a single place</h4>
+              <p>A-Z management of different store in a single system along with all employee leave/holidays.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 feature">
+            <div class="mr-5 feature-image">
+              <img src="/images/features/invoice.png" alt="Invoicing" width="" />
+            </div>
+            <div class="feature-desc">
+              <h4>Invoicing</h4>
+              <p>We have a unique workflow to generate invoice from ticket. As well as you can generate invoices for accessories.</p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 feature">
+            <div class="mr-5">
+              <img src="/images/features/export_data.png" alt="Export of data" />
+            </div>
+            <div>
+              <h4>Export of data</h4>
+              <p>You are not stuck in this system. You can export all the data in csv/excel format.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="pricing py-5 bg-white" id="pricing">
+      <h2 class="text-center mb-4">One time pricing</h2>
+      <div class="pricing-box">
+        <div class="plan-inside">
+          All features in one plan with one price. Manage your business effectively with <br>
+          <ul class="list-group mt-4">
+            <li class="list-group-item">Book unlimited repairs</li>
+            <li class="list-group-item">Unlimited products or categories</li>
+            <li class="list-group-item">Unlimited customers</li>
+            <li class="list-group-item">Unlimited invoices</li>
+          </ul>
+        </div>
+        <div class="plan-footer text-center">
+          <p>Please contact us to get the quote</p>
+          <a href="mailto:contact@repairrabbit.co?subject=Get the quotation of RepairRabbit Software" title="contact us">
+            <button class="btn btn-warning">Contact Us</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="py-5 bg-light-blue customization">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>Customization</h2>
+            <h3>RepairRabbit online system fully customized for your business needs. We have a great team of professionals working for you.</h3>
+          </div>
+          <div class="col-sm-1 vertical-seprator">
+            <div></div>
+          </div>
+          <div class="col-sm-3">
+            <p>Please contact us for your specific business need, we are happy to hear and make your business grow</p>
+            <a href="mailto:contact@repairrabbit.co?subject=Need Customization of RepairRabbit" title="contact us to RepairRabbit">
+              <button class="btn btn-warning">
+                Contact Us
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="py-5 bg-white businesses">
+      <h2 class="text-center">Businesses</h2>
+      <h3 class="text-center">who can take advantages of RepairRabbit Software</h3>
+      <div class="d_f j_c_c">
+        <ul class="list-group mt-4">
+          <li class="list-group-item">
+            Phone Repairing
+          </li>
+          <li class="list-group-item">
+            Laptop Repairing
+          </li>
+          <li class="list-group-item">
+            Accesories Repairing
+          </li>
+          <li class="list-group-item">
+            Electronic Devices Repairing
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  -->
+    <section class="py-5 bg-light-blue technologies">
+      <h2 class="text-center">Technologies</h2>
+      <h3 class="text-center">cutting age technologies on which repairrabbit built on</h3>
+      <div class="technologiesList">
+        <a href="http://www.php.net/" class="tech">
+          <label>Php >= 5.6.*</label>
+          <img src="/images/technologies/php.png">
+        </a>
+        <!--  -->
+        <a href="https://laravel.com/docs/5.4/installation" class="tech">
+          <label>Laravel @5.4.*</label>
+          <svg xmlns="http://www.w3.org/2000/svg" width="75" height="51" viewBox="0 0 84.1 57.6"><path fill="#FB503B" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path></svg>
+        </a>
+        <!--  -->
+        <a class="tech" href="https://getcomposer.org/">
+          <label>Composer >= 1.6.3</label>
+          <img src="/images/technologies/composer.png">
+        </a>
+        <!--  -->
+        <a href="https://www.mysql.com/" class="tech">
+          <label>Mysql >= 5.7.17</label>
+          <img src="/images/technologies/mysql.png">
+        </a>
+        <!--  -->
+        <div class="tech">
+          <label>Html5</label>
+          <img src="/images/technologies/HTML5.png">
+        </div>
+        <!--  -->
+        <div class="tech">
+          <label>Css3</label>
+          <img src="/images/technologies/css3.png">
+        </div>
+        <!--  -->
+        <div class="tech">
+          <label>Js</label>
+          <img src="/images/technologies/js.png">
+        </div>
+        <!--  -->
+      </div>
+    </section>
+    <!--  -->
+    {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>
 </html>

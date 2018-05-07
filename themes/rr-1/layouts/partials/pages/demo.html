@@ -1,57 +1,25 @@
-<style type="text/css">
-  .section_wrapper * {
-    font-size: 18px;
-  }
-</style>
-<!-- Main Content -->
-<div id="Content">
-  <div class="content_wrapper clearfix">
-    <div class="sections_group">
-      <div class="entry-content">
-        <div class="section" style="padding-top: 50px; background-color:#00cdc1;">
-          <div class="section_wrapper clearfix">
-            <div class="items_group clearfix">
-              <!-- One full width row-->
-              <div class="column one column_column ">
-                <div class="column_attr align_center">
-                  <h2 class="subheader">DEMO</h2>
-                </div>
-              </div>
-            </div>
+<link rel="stylesheet" type="text/css" href="/css/markdown.css">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 page-header b-bc-b text-center p-5">
+      <h1 class="c-w m-0">Demo</h1>
+    </div>
+    <div class="col-sm-12 bg-white p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <article class="markdown-body">
+              {{.Content}}
+            </article>
           </div>
         </div>
-        <div class="section" style="max-width: 600px;margin: 0 auto;padding-top:50px; padding-bottom:50px; background-image:url(images/home_software_pattern.png); background-repeat:repeat; background-position:center; ">
-          <div class="section_wrapper clearfix">
-            <div class="items_group clearfix">
-              {{.Content}}
-              <br>
-              <br>
-              <div style="display: flex;justify-content: center;">
-                <div style="text-align: center;">
-                  <a href="https://demo.repairrabbit.co/" target="_blank" class="button button_left button_theme button_js" style="
-                    background-color: rgb(255, 189, 31) !important;
-                    border: 1px solid rgb(255, 189, 31) !important;
-                    color: rgb(9, 20, 47);
-                    box-shadow: none;
-                    font-size: 18px;
-                  ">
-                    <span class="button_label">Customer</span>
-                  </a>
-                </div>
-                <div style="text-align: center;">
-                  <a href="https://demo.repairrabbit.co/admin" target="_blank" class="button button_left button_theme button_js" style="
-                    background-color: rgb(255, 189, 31) !important;
-                    border: 1px solid rgb(255, 189, 31) !important;
-                    color: rgb(9, 20, 47);
-                    box-shadow: none;
-                    font-size: 18px;
-                  ">
-                    <span class="button_label">Admin</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="text-center mt-5">
+          <a href="https://demo.repairrabbit.co/" target="_blank" title="Customer portal">
+            <button type="button" class="btn b-bc-y">Customer</button>
+          </a>
+          <a href="https://demo.repairrabbit.co/admin" target="_blank" title="Admin portal">
+            <button type="button" class="btn b-bc-y">Admin</button>
+          </a>
         </div>
       </div>
     </div>

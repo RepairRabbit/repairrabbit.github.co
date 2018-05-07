@@ -2,16 +2,12 @@
 <html lang="en">
   {{ partial "header.html" . }}
   <body>
+    <!--  -->
     {{ partial "navbar.html" . }}
     <!--  -->
-    <div class="video-container">
-      <video  autoplay loop id="video">
-        <source src="videos/3.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-    </div>
+    <div class="background-image"></div>
     <!--  -->
-    <section class="heroUnit container py-5 text-center">
+    <section class="heroUnit container-fluid py-5 text-center">
       <div>
         <h1 class="mt-5 mb-3 tagLine">
           Let’s enhance your <span class="bc-y">repairing business</span>
@@ -19,22 +15,21 @@
           with our ready to use system
         </h1>
         <a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit">
-          <button class="btn b-bc-y mb-5">Contact Us</button>
+        <button class="btn b-bc-y mb-5">Contact Us</button>
         </a>
-      </div>
-      <div>
-        <img src="/images/features.png" alt="RepairRabbit dashboard page" />
       </div>
     </section>
     <!--  -->
-    <div class="bg-white seprator"></div>
-    <!--  -->
     <section class="aboutUs py-5">
       <div class="container">
-        <h2 class="text-center">About us</h2>
         <div class="row">
-          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 des">
-            RepairRabbit helps you to streamline your Repairing Business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
+          <div class="col-xl-5 col-lg-5 info">
+            <div class="des mb-5 mb-sm-5 mb-md-5 mb-lg-0">
+              RepairRabbit helps you to streamline your Repairing Business. We have worked with different industry and that will help you cater your business needs with help of our systems. You can use our ready to use system. As all business have their unique process, we can also help you to customize system as per your need at affordable price.
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7">
+            <img src="/images/features.png" alt="RepairRabbit dashboard page" style="max-width: 100%;" />
           </div>
         </div>
       </div>
@@ -125,28 +120,35 @@
               <h4>Export of data</h4>
               <p>You are not stuck in this system. You can export all the data in csv/excel format.</p>
             </div>
-          </div> -->
+            </div> -->
         </div>
       </div>
     </section>
     <!--  -->
     <section class="pricing py-5 bg-white" id="pricing">
-      <h2 class="text-center mb-4">One time pricing</h2>
-      <div class="pricing-box">
-        <div class="plan-inside">
-          All features in one plan with one price. Manage your business effectively with <br>
-          <ul class="list-group mt-4">
-            <li class="list-group-item">Book unlimited repairs</li>
-            <li class="list-group-item">Unlimited products or categories</li>
-            <li class="list-group-item">Unlimited customers</li>
-            <li class="list-group-item">Unlimited invoices</li>
-          </ul>
-        </div>
-        <div class="plan-footer text-center">
-          <p>Please contact us to get the quote</p>
-          <a href="mailto:contact@repairrabbit.co?subject=Get the quotation of RepairRabbit Software" title="contact us">
-            <button class="btn btn-warning">Contact Us</button>
-          </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
+            <h2>One time pricing</h2>
+            <h3>All features in one plan with one price. Manage your business effectively without any limitations.</h3>
+            <br>
+            <p>Please contact us to get the quote</p>
+            <a href="mailto:contact@repairrabbit.co?subject=Get the quotation of RepairRabbit Software" title="contact us">
+            <button class="btn b-bc-y mb-5 mb-sm-0">Contact Us</button>
+            </a>
+          </div>
+          <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-12 vertical-seprator">
+            <div></div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-12">
+            <h3>Benefits</h3>
+            <ul class="pricingFeatures1 list-group">
+              <li class="list-group-item"><span>Book unlimited repairs</span></li>
+              <li class="list-group-item"><span>Unlimited products/categories</span></li>
+              <li class="list-group-item"><span>Unlimited customers</span></li>
+              <li class="list-group-item"><span>Unlimited invoices</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -154,19 +156,19 @@
     <section class="py-5 bg-light-blue customization">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
             <h2>Customization</h2>
             <h3>RepairRabbit online system fully customized for your business needs. We have a great team of professionals working for you.</h3>
           </div>
-          <div class="col-sm-1 vertical-seprator">
+          <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-12 vertical-seprator">
             <div></div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-12">
             <p>Please contact us for your specific business need, we are happy to hear and make your business grow</p>
             <a href="mailto:contact@repairrabbit.co?subject=Need Customization of RepairRabbit" title="contact us to RepairRabbit">
-              <button class="btn btn-warning">
-                Contact Us
-              </button>
+            <button class="btn b-bc-y">
+            Contact Us
+            </button>
             </a>
           </div>
         </div>
@@ -177,18 +179,26 @@
       <h2 class="text-center">Businesses</h2>
       <h3 class="text-center">who can take advantages of RepairRabbit Software</h3>
       <div class="d_f j_c_c">
-        <ul class="list-group mt-4">
+        <ul class="businessesList list-group mt-4">
           <li class="list-group-item">
-            Phone Repairing
+            <span>
+            Phone <br>Repairing
+            </span>
           </li>
           <li class="list-group-item">
-            Laptop Repairing
+            <span>
+            Laptop <br>Repairing
+            </span>
           </li>
           <li class="list-group-item">
-            Accesories Repairing
+            <span>
+            Accesories <br>Repairing
+            </span>
           </li>
           <li class="list-group-item">
-            Electronic Devices Repairing
+            <span>
+            Electronic Devices <br>Repairing
+            </span>
           </li>
         </ul>
       </div>
@@ -199,23 +209,25 @@
       <h3 class="text-center">cutting age technologies on which repairrabbit built on</h3>
       <div class="technologiesList">
         <a href="http://www.php.net/" class="tech">
-          <label>Php >= 5.6.*</label>
-          <img src="/images/technologies/php.png">
+        <label>Php >= 5.6.*</label>
+        <img src="/images/technologies/php.png">
         </a>
         <!--  -->
         <a href="https://laravel.com/docs/5.4/installation" class="tech">
           <label>Laravel @5.4.*</label>
-          <svg xmlns="http://www.w3.org/2000/svg" width="75" height="51" viewBox="0 0 84.1 57.6"><path fill="#FB503B" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="75" height="51" viewBox="0 0 84.1 57.6">
+            <path fill="#FB503B" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"></path>
+          </svg>
         </a>
         <!--  -->
         <a class="tech" href="https://getcomposer.org/">
-          <label>Composer >= 1.6.3</label>
-          <img src="/images/technologies/composer.png">
+        <label>Composer >= 1.6.3</label>
+        <img src="/images/technologies/composer.png">
         </a>
         <!--  -->
         <a href="https://www.mysql.com/" class="tech">
-          <label>Mysql >= 5.7.17</label>
-          <img src="/images/technologies/mysql.png">
+        <label>Mysql >= 5.7.17</label>
+        <img src="/images/technologies/mysql.png">
         </a>
         <!--  -->
         <div class="tech">

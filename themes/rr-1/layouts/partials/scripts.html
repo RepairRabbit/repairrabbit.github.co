@@ -1,12 +1,13 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="/plugins/jquery/dist/jquery.min.js"></script>
+<script src="/plugins/popper.js/dist/popper.min.js"></script>
+<script src="/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/plugins/rrssb-master/js/rrssb.min.js"></script>
 
 <script type="text/javascript">
-  // navigation javascript
-  $(window).scroll(function (event) {
+  // navigation
+  function navbarClassAddRemoveOnScroll() {
     if ($('.navbar-toggler').css('display') == 'none') {
       if($(window).scrollTop() == 0) {
         $('.navbar').addClass('nav-transparent');
@@ -16,8 +17,8 @@
     } else {
       $('.navbar').removeClass('nav-transparent');
     }
-  });
-  $( window ).resize(function() {
+  }
+  function navbarClassAddRemoveOnResize() {
     if (window.innerWidth <= 991) {
       $('.navbar').removeClass('nav-transparent');
     } else {
@@ -26,6 +27,28 @@
       } else {
         $('.navbar').removeClass('nav-transparent');
       }
+    }
+  }
+  if (window.location.pathname == '/') {
+    navbarClassAddRemoveOnScroll();
+    navbarClassAddRemoveOnResize();
+    $(window).scroll(function (event) {
+      navbarClassAddRemoveOnScroll();
+    });
+    $( window ).resize(function() {
+      navbarClassAddRemoveOnResize();
+    });
+  }
+
+  // smooth scrolling
+  $( document ).ready(function() {
+    if (window.location.hash) {
+      $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 88}, 1000);
+    }
+  });
+  $(".navbar-custom li a").click(function(e) {
+    if($(this).attr('href').replace('/','')) {
+      $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 88}, 1000);
     }
   });
 </script>

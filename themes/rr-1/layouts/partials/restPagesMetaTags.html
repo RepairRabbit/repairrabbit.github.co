@@ -1,19 +1,21 @@
 {{ $baseUrl:= trim .Site.BaseURL "/" }}
 {{ $image := printf "%s%s" $baseUrl .Params.image }}
 
-<title>{{ .Title }} - {{.Site.Title}}</title>
-<meta name="description" content="{{ .Summary }}">
+<title>{{ .Title }} - {{.Site.Title}} - {{.Site.Params.tagLine}}</title>
+
+<meta name="title" content ="{{ .Title }} - {{.Site.Title}} - {{.Site.Params.tagLine}}">
+<meta name="description" content="{{ .Summary }} - {{.Site.Title}} - {{.Site.Params.tagLine}}">
 <meta name="author" content="{{ .Params.auther }}">
 
 <meta property="og:url"           content="{{.Permalink}}" />
 <meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{ .Title }} - {{.Site.Title}}" />
-<meta property="og:description"   content="{{.Site.Params.tagLine}}" />
+<meta property="og:title"         content="{{ .Title }} - {{.Site.Title}} - {{.Site.Params.tagLine}}" />
+<meta property="og:description"   content="{{ .Summary }} - {{.Site.Title}} - {{.Site.Params.tagLine}}" />
 <meta property="og:image"         content='{{$image}}' />
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@repairRabbit">
 <meta name="twitter:creator" content="@repairRabbit">
-<meta name="twitter:title" content="{{ .Title }} - {{.Site.Title}}">
-<meta name="twitter:description" content="{{ .Summary }}">
+<meta name="twitter:title" content="{{ .Title }} - {{.Site.Title}} - {{.Site.Params.tagLine}}">
+<meta name="twitter:description" content="{{ .Summary }} - {{.Site.Title}} - {{.Site.Params.tagLine}}">
 <meta name="twitter:image" content="{{$image}}">

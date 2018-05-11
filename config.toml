@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://repairrabbit.gitlab.io/"
+baseURL = "https://www.repairrabbit.co/"
 languageCode = "en-us"
 title = "RepairRabbit"
 themesDir = "themes"
@@ -9,4 +9,4 @@ googleAnalytics = "UA-112062782-1"
   tag = "tags"
   category = "categories"
 [params]
-  tagLine = "Let’s scale your repairing business with our ready to use system"
+  tagLine = "Let’s enhance your repairing business with our ready to use system"

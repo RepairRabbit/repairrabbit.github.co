@@ -14,7 +14,7 @@ now go to `repairrabbit.gitlab.io/hugo` folder
 
 run website with theme `rr-1`
 ```sh
-hugo server -t rr-1
+hugo server --noHTTPCache -t rr-1 --disableFastRender
 ```
 
 build website

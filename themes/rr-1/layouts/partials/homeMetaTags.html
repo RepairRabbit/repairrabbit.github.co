@@ -1,16 +1,18 @@
-<title>{{.Site.Title}}</title>
-<meta name="description" content="{{.Site.Params.tagLine}}">
+<title>{{.Site.Title}} - {{.Site.Params.tagLine}}</title>
+
+<meta name="title" content ="{{.Site.Title}} - {{.Site.Params.tagLine}}">
+<meta name="description" content="{{.Site.Title}} - {{.Site.Params.tagLine}}">
 <meta name="author" content="{{.Site.Title}}">
 
-<meta property="og:url"           content="{{.Permalink}}" />
+<meta property="og:url"           content="{{.Site.BaseURL}}" />
 <meta property="og:type"          content="website" />
-<meta property="og:title"         content="{{.Site.Title}}" />
-<meta property="og:description"   content="{{.Site.Params.tagLine}}" />
-<meta property="og:image"         content='{{trim .Site.BaseURL "/"}}/images/1.png' />
+<meta property="og:title"         content="{{.Site.Title}} - {{.Site.Params.tagLine}}" />
+<meta property="og:description"   content="{{.Site.Title}} - {{.Site.Params.tagLine}}" />
+<meta property="og:image"         content='{{trim .Site.BaseURL "/"}}/images/features.png' />
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@repairRabbit">
 <meta name="twitter:creator" content="@repairRabbit">
-<meta name="twitter:title" content="{{.Site.Title}}">
-<meta name="twitter:description" content="{{.Site.Params.tagLine}}">
-<meta name="twitter:image" content='{{trim .Site.BaseURL "/"}}/images/1.png'>
+<meta name="twitter:title" content="{{.Site.Title}} - {{.Site.Params.tagLine}}">
+<meta name="twitter:description" content="{{.Site.Title}} - {{.Site.Params.tagLine}}">
+<meta name="twitter:image" content='{{trim .Site.BaseURL "/"}}/images/features.png'>

@@ -6,10 +6,12 @@
 
 ::selection {
   background: #00cdc1;
+  color: #000000;
 }
 
 ::-moz-selection {
   background: #00cdc1;
+  color: #000000;
 }
 
 
@@ -43,6 +45,13 @@
   background-color: #f1f7fb;
 }
 
+.bg-light-gray {
+  background-color: #f2f2f2;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
 
 /*flex*/
 
@@ -73,8 +82,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('/images/main-background.jpg');
-  filter: grayscale(1) brightness(0.65) contrast(1.05);
-  -webkit-filter: grayscale(1) brightness(0.65) contrast(1.05);
+  filter: grayscale(1) brightness(0.5) contrast(1);
+  -webkit-filter: grayscale(1) brightness(0.5) contrast(1);
 }
 
 .demo-bg {
@@ -94,6 +103,7 @@
   top: 0;
   z-index: 1100;
   transition: .3s all linear;
+  border-bottom: 1px solid #ccc;
 }
 
 .navbar-custom .navbar-nav {
@@ -109,9 +119,11 @@
 
 .navbar-custom .navbar-nav .nav-item a {
   width: 100%;
+  font-size: 21px;
 }
 
 .nav-transparent {
+  border-bottom: none;
   background-color: transparent !important;
 }
 
@@ -121,11 +133,12 @@
 }
 
 .nav-transparent .navbar-nav .nav-item.active a {
-  color: yellow;
+  color: #F7FFFF;
 }
 
-.nav-transparent .navbar-nav .nav-item:hover a {
-  color: yellow;
+.nav-transparent .navbar-nav .nav-item a:hover,
+.nav-transparent .navbar-nav .nav-item a:focus {
+  color: #F7FFFF;
 }
 
 
@@ -163,13 +176,22 @@
   -moz-osx-font-smoothing: auto;
 }
 
+.aboutUs,
+.features,
+.pricing,
+.customization,
+.businesses,
+.technologies {
+  padding: 96px 0;
+}
+
 .aboutUs h2,
 .features h2,
 .pricing h2,
 .customization h2,
 .businesses h2,
 .technologies h2 {
-  color: #09142f;
+  color: #00645F;
   font-size: 42px;
   margin-bottom: 15px;
 }
@@ -214,7 +236,7 @@
 .pricing h3,
 .businesses h3,
 .technologies h3 {
-  color: #808080;
+  color: #515151;
   font-size: 25px;
   margin-bottom: 15px;
 }
@@ -270,10 +292,10 @@
 
 .pricingFeatures1 li {
   margin: 5px;
-  color: #808080;
+  color: #00645F;
   font-size: 18px;
   border-width: 2px;
-  border-color: #00cdc1;
+  border-color: #00645F;
   border-radius: 0px !important;
 }
 
@@ -309,15 +331,19 @@
   width: 150px;
   height: 150px;
   display: flex;
-  color: #808080;
+  color: #00645F;
   font-size: 20px;
   border-width: 2px;
   text-align: center;
   align-items: center;
-  border-color: #00cdc1;
+  border-color: #00645F;
   justify-content: center;
   transform: rotate(45deg);
   border-radius: 5px !important;
+}
+
+.businessesList li:focus, .businessesList li:hover {
+  z-index: auto;
 }
 
 .businessesList li span {
@@ -593,6 +619,15 @@ footer * {
   .heroUnit img {
     max-width: auto;
     max-height: 320px;
+  }
+  /**/
+  .aboutUs,
+  .features,
+  .pricing,
+  .customization,
+  .businesses,
+  .technologies {
+    padding: 48px 0;
   }
   /**/
   .seprator {

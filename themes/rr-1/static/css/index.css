@@ -221,6 +221,10 @@
 
 /* features */
 
+#features {
+  background-color: #383838;
+}
+
 .feature {
   display: flex;
   margin-bottom: 30px;
@@ -241,8 +245,21 @@
   margin-bottom: 15px;
 }
 
+.features h2 {
+  color: #ffbd1f;
+}
+
+.features h3 {
+  color: white;
+}
+
+.features .feature-desc h4 {
+  color: #ffbd1f;
+  font-weight: bold;
+}
+
 .features .feature-desc p {
-  color: #505050;
+  color: white;
 }
 
 .feature-image {
@@ -250,6 +267,9 @@
   text-align: center;
 }
 
+.feature-image img {
+  width: 55%;
+}
 
 /* pricing-box */
 

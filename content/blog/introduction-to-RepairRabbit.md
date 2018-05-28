@@ -5,18 +5,18 @@ draft: false
 auther: "Tapan"
 image: "/images/blogs/introduction-to-repairrabbit.jpg"
 tags: ["Business Management", "Employee Management", "Data Management", "Multiple Store Management", "Inventory Management"]
-categories: ["Software", "Repairing Business", "Web Application"]
+categories: ["Software", "Repair Business", "Web Application"]
 ---
 
 <img src="/images/blogs/introduction-to-repairrabbit.jpg" />
 
 <br>
 
-RepairRabbit is a self-hosted software that offers automation to your repairing business. 
+RepairRabbit is a self-hosted software that offers automation to your repair business.
 
 RepairRabbit allows to monitor multiple repair stores operation and services. It also helps in managing tickets, customer records and their progress.
    
-RepairRabbit helps you to minimize your paperwork in repairing business. We are serving to different industries to minimize their workload and time to maximize their productivity.
+RepairRabbit helps you to minimize your paperwork in repair business. We are serving to different industries to minimize their workload and time to maximize their productivity.
    
 <hr>  
       
@@ -29,7 +29,7 @@ Basically `Dashboard` means `report` or `progress report`. The dashboard allows 
 Anyone can create a new appointment at their convenient time from any of their devices, it could be mobile/desktop at their nearest location. It is the easiest way to add details of every product and keeping the record of it.
     
 ### Ticket
-A ticket is your job sheet that contains everything for a particular repair. All you need to do is to generate tickets for every product. Ticket can help you to find out particular product details of repairing.
+A ticket is your job sheet that contains everything for a particular repair. All you need to do is to generate tickets for every product. Tickets can help you to find out particular product details of repair.
   
 ### Invoicing
 We have a unique workflow to generate an invoice from a ticket. As well as you can generate invoices for accessories. Anyone can convert ticket into an invoice.

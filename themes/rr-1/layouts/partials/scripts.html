@@ -42,6 +42,7 @@
 
   // smooth scrolling
   $( document ).ready(function() {
+    $(document).on("scroll", onScroll);
     if (window.location.hash) {
       $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 88}, 1000);
     }
@@ -51,4 +52,25 @@
       $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 88}, 1000);
     }
   });
+
+  function onScroll(event){
+    console.log('called');
+    var scrollPos = $(document).scrollTop() + 88;
+    $('.nav-item a').each(function () {
+        var currLink = $(this);
+        var links = currLink.attr("href");
+        if( links &&  links.indexOf('/#') != -1 ) {
+          var refElement = $(links.replace("/", ""));
+          if (Object.keys(refElement).length > 0) {
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.nav-item').removeClass("active");
+                currLink.parent().addClass("active");
+            }
+            else{
+                currLink.parent().removeClass("active");
+            }
+          }
+        }
+    });
+  }
 </script>

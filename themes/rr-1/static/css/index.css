@@ -185,7 +185,8 @@
 .pricing,
 .customization,
 .businesses,
-.technologies {
+.technologies,
+.faqs {
   padding: 96px 0;
 }
 
@@ -194,7 +195,8 @@
 .pricing h2,
 .customization h2,
 .businesses h2,
-.technologies h2 {
+.technologies h2,
+.faqs h2 {
   color: #00645F;
   font-size: 42px;
   margin-bottom: 15px;
@@ -243,7 +245,8 @@
 .customization h3,
 .pricing h3,
 .businesses h3,
-.technologies h3 {
+.technologies h3,
+.faqs h3 {
   color: #515151;
   font-size: 25px;
   margin-bottom: 15px;
@@ -424,6 +427,38 @@
   padding: 0;
 }
 
+
+/* faqs */
+.faqs .faq {
+  display: flex;
+}
+
+.faqs .faq .faq-icon {
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.faqs .faq .faq-icon img{
+  width: 100%;
+}
+
+.faqs .faq .faq-q-a h4 {
+  color: #00645F;
+  font-weight: bold;
+}
+
+.faqs .faq .faq-q-a ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faqs .faq .faq-q-a ul li {
+  display: flex;
+}
+
+.faqs .faq .faq-q-a ul li img{
+  margin-top: 3px;
+}
 
 /* footer */
 
@@ -650,7 +685,8 @@ footer * {
   .pricing,
   .customization,
   .businesses,
-  .technologies {
+  .technologies,
+  .faqs {
     padding: 48px 0;
   }
   /**/

@@ -9,8 +9,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/" title="Home"><span>Home <span class="sr-only">(current)</span></span></a>
+        <li class="nav-item {{ if eq .Title "Demo" }} active {{ end }}">
+          <a class="nav-link" href="/demo" title="Demo"><span>Demo</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/#features" title="Features"><span>Features</span></a>
@@ -19,16 +19,13 @@
           <a class="nav-link" href="/#pricing" title="Pricing"><span>Pricing</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/demo" title="Demo"><span>Demo</span></a>
+          <a class="nav-link" href="/#faqs" title="FAQs"><span>Faqs</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://kb.repairrabbit.co/" rel="noopener" target="_blank" title="Knowledgebase"><span>Knowledgebase</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blogs" title="Blog"><span>Blogs</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#faqs" title="FAQs"><span>FAQs</span></a>
+        <li class="nav-item {{ if eq .Title "Blog" }} active {{ end }}">
+          <a class="nav-link" href="/blog" title="Blog"><span>Blog</span></a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" rel="noopener" target="_blank" title="contact us" class="display-flex al_center">

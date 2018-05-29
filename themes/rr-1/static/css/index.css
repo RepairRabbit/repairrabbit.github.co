@@ -53,6 +53,10 @@
   font-size: 14px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
 .fs-19 {
   font-size: 19px;
 }
@@ -191,13 +195,13 @@
   align-items: center;
   background-image: url(/images/features.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 28%;
   background-position: right bottom;
   background-color: #f8f8f8;
 }
 
 .heroUnit h1 {
-  font-size: 72px;
+  font-size: 70px;
 }
 
 .heroUnit img {
@@ -205,7 +209,7 @@
 }
 
 .heroUnit p {
-  font-size: 20px;
+  font-size: 22px;
   color: #303030;
 }
 
@@ -702,17 +706,17 @@ footer * {
   .pricingFeatures1 li {
     flex-grow: 1;
   }
-    .heroUnit h1 {
-      font-size: 60px;
-    }
-}
-
-@media (max-width: 991px) {
   .heroUnit {
     background-image: none;
   }
   .heroUnit h1 {
-    font-size: 45px;
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 991px) {
+  .heroUnit h1 {
+    font-size: 43px;
   }
   .heroUnit button {
     font-size: 21px;

@@ -109,7 +109,8 @@
 
 .heroUnit .btn,
 .pricing .btn,
-.customization .btn {
+.customization .btn,
+.contact-us-call-to-action .btn {
   font-size: 24px;
   padding: 10px 40px;
   transition: all 0.05s ease-out;
@@ -170,8 +171,8 @@
 #navbarSupportedContent li a {
   padding-left: 0;
   padding-right: 0;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: 0.85rem;
+  margin-right: 0.85rem;
 }
 
 .navbar-custom #navbarSupportedContent li a {
@@ -202,6 +203,7 @@
 
 .heroUnit h1 {
   font-size: 70px;
+  color: #555555;
 }
 
 .heroUnit img {
@@ -247,7 +249,8 @@
 .customization,
 .businesses,
 .technologies,
-.faqs {
+.faqs,
+.whyRepairRabbit {
   padding: 96px 0;
 }
 
@@ -257,7 +260,8 @@
 .customization h2,
 .businesses h2,
 .technologies h2,
-.faqs h2 {
+.faqs h2,
+.whyRepairRabbit h2 {
   color: #00645F;
   font-size: 42px;
   margin-bottom: 15px;
@@ -307,7 +311,8 @@
 .pricing h3,
 .businesses h3,
 .technologies h3,
-.faqs h3 {
+.faqs h3,
+.whyRepairRabbit h3 {
   color: #515151;
   font-size: 25px;
   margin-bottom: 15px;
@@ -339,7 +344,110 @@
   width: 55%;
 }
 
-/* pricing-box */
+
+/* runnin-bussiness-icon */
+.runnin-bussiness-icon {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 100%;
+  height: 105px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.runnin-bussiness-icon img {
+  position: absolute;
+}
+
+.runnin-bussiness-icon .rbi-2 {
+  bottom: -30px;
+  right: 20px;
+}
+
+.whyRepairRabbit .why-questions {
+  display: flex;
+  justify-content: center;
+}
+
+.whyRepairRabbit .why-questions div {
+  padding: 15px;
+}
+
+.whyRepairRabbit .why-questions p {
+  display: flex;
+  color: #00645F;
+  font-size: 18px;
+}
+
+.whyRepairRabbit .benifits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyRepairRabbit .benifits div {
+  width: 250px;
+}
+
+.whyRepairRabbit .benifits div img {
+  margin-bottom: 15px;
+}
+
+.whyRepairRabbit .benifits div h5 {
+  color: #00645F;
+}
+
+/* comparision with repairrabbit */
+.comparision-with-repairrabbit {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.comparision-with-repairrabbit table {
+  margin: 0;
+  max-width: 1200px;
+}
+
+.comparision-with-repairrabbit table td,
+.comparision-with-repairrabbit table th {
+  color: #303030;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  border-top: 1px dashed #e0e0e0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.comparision-with-repairrabbit table td:first-child,
+.comparision-with-repairrabbit table th:first-child {
+  border-left: 1px dashed #e0e0e0;
+  border-right: 1px dashed #e0e0e0;
+}
+
+.comparision-with-repairrabbit table td:last-child,
+.comparision-with-repairrabbit table th:last-child {
+  color: #00645F;
+  padding: 30px 10px;
+  border-left: 1px solid #00645F;
+  border-right: 1px solid #00645F;
+}
+
+.comparision-with-repairrabbit table tr:first-child th:last-child {
+  border-top: 3px solid #00645F;
+}
+
+.comparision-with-repairrabbit table tr:last-child td:last-child {
+  border-bottom: 3px solid #00645F;
+}
+
+/* pricing-box
 
 .pricing-box {
   color: white;
@@ -519,6 +627,30 @@
 
 .faqs .faq .faq-q-a ul li img{
   margin-top: 3px;
+}
+
+/*  */
+
+.contact-us-call-to-action {
+  color: white;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #00645F;
+  /*background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);*/
+}
+
+.contact-us-call-to-action div {
+  display: flex;
+  width: 1140px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us-call-to-action div * {
+  margin: 15px;
 }
 
 /* footer */
@@ -728,6 +860,9 @@ footer * {
   .pricingFeatures1 li {
     padding: 10px;
   }
+  .contact-us-call-to-action div {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -753,7 +888,8 @@ footer * {
   .customization,
   .businesses,
   .technologies,
-  .faqs {
+  .faqs,
+  .whyRepairRabbit {
     padding: 48px 0;
   }
   /**/

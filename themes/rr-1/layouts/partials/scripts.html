@@ -44,17 +44,17 @@
   $( document ).ready(function() {
     $(document).on("scroll", onScroll);
     if (window.location.hash) {
-      $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 88}, 1000);
+      $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 75.6}, 1000);
     }
   });
   $(".navbar-custom li a").click(function(e) {
     if($(this).attr('href').replace('/','')) {
-      $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 88}, 1000);
+      $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 75.6}, 1000);
     }
   });
 
   function onScroll(event){
-    var scrollPos = $(document).scrollTop() + 88;
+    var scrollPos = $(document).scrollTop() + 75.6;
     $('.nav-item a').each(function () {
         var currLink = $(this);
         var links = currLink.attr("href");
@@ -72,4 +72,24 @@
         }
     });
   }
+
+  $( "#getInTouch" ).submit(function( event ) {
+    event.preventDefault();
+    var email = $("input[name='email']").val();
+    $.ajax({
+      type: "POST",
+      url: 'https://demo.repairrabbit.co/api/feedback',
+      data: {
+        name: "RepairRabbitWebsiteLead",
+        email,
+        message: "from repairrabbit website"
+      },
+      success: function(response) {
+        $("#subscribeMsg").html(`<p class='success'>Success!</p>`);
+      },
+      error: function(error) {
+        $("#subscribeMsg").html(`<p class="error">${JSON.parse(error.responseText).messages.email[0]}</p>`);
+      }
+    });
+  });
 </script>

@@ -33,6 +33,10 @@
   background-color: #00cdc1;
 }
 
+.c-db {
+  color: #008077;
+}
+
 .c-w {
   color: white;
 }
@@ -46,7 +50,7 @@
 }
 
 .bg-light-gray {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
 }
 
 .fs-14 {
@@ -59,6 +63,10 @@
 
 .fs-19 {
   font-size: 19px;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 /*flex*/
@@ -77,6 +85,10 @@
 
 .j_c_s_b {
   justify-content: space-between;
+}
+
+.f_w_w {
+  flex-wrap: wrap;
 }
 
 .background-image {
@@ -112,7 +124,7 @@
 .customization .btn,
 .contact-us-call-to-action .btn {
   font-size: 24px;
-  padding: 10px 40px;
+  padding: 10px 72px;
   transition: all 0.05s ease-out;
 }
 
@@ -187,6 +199,13 @@
   border-bottom: 3px solid #00645F;
 }
 
+.navbar-custom #navbarSupportedContent li:hover a.btn-link,
+.navbar-custom #navbarSupportedContent li.active a.btn-link {
+  color: #00645F;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
 /* heroUnit */
 
 .heroUnit {
@@ -196,7 +215,6 @@
   align-items: center;
   background-image: url(/images/features.png);
   background-repeat: no-repeat;
-  background-size: 28%;
   background-position: right bottom;
   background-color: #f8f8f8;
 }
@@ -215,6 +233,14 @@
   color: #303030;
 }
 
+.heroUnit .call-to-action p {
+  color: #008077;
+  font-size: 18px;
+  width: 254.61px;
+  font-style: italic;
+  text-align: center;
+}
+
 .sticky-demo-link {
   right: 0;
   bottom: 0;
@@ -231,7 +257,8 @@
 .sticky-demo-link a .alert {
   font-size: 18px;
   border-radius: 0;
-  background-color: rgba(0,205,193,0.9);
+  background-color: #ffc420;
+  display: none;
 }
 
 /* tagline */
@@ -250,7 +277,8 @@
 .businesses,
 .technologies,
 .faqs,
-.whyRepairRabbit {
+.whyRepairRabbit,
+.comparison {
   padding: 96px 0;
 }
 
@@ -261,7 +289,8 @@
 .businesses h2,
 .technologies h2,
 .faqs h2,
-.whyRepairRabbit h2 {
+.whyRepairRabbit h2,
+.comparison h2 {
   color: #00645F;
   font-size: 42px;
   margin-bottom: 15px;
@@ -312,7 +341,8 @@
 .businesses h3,
 .technologies h3,
 .faqs h3,
-.whyRepairRabbit h3 {
+.whyRepairRabbit h3,
+.comparison h3 {
   color: #515151;
   font-size: 25px;
   margin-bottom: 15px;
@@ -447,6 +477,13 @@
   border-bottom: 3px solid #00645F;
 }
 
+#pricing {
+  background-image: url("/images/rabbit.svg");
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: 95% bottom;
+}
+
 /* pricing-box
 
 .pricing-box {
@@ -558,21 +595,17 @@
 .technologies .technologiesList .tech {
   margin: 5px;
   display: flex;
-  padding: 10px;
+  padding: 25px 15px;
   flex-wrap: wrap;
-  min-width: 135px;
+  min-width: 200px;
   text-align: center;
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: white;
-  color: #606060;
-}
-
-.technologies .technologiesList .tech:hover {
-  background-color: #e8e7e9;
-  cursor: pointer;
+  color: teal;
+  border: 2px solid #aaaaaa4f;
 }
 
 .technologies .technologiesList .tech img,
@@ -672,6 +705,28 @@ footer * {
   font-size: 18px;
 }
 
+.getInTouch .form-control:focus {
+  border-color: white;
+  box-shadow: none;
+}
+
+.getInTouch .btn:Hover {
+  transform: none;
+}
+
+.getInTouch .success {
+  color: white;
+  padding: 5px;
+  background-color: darkgreen;
+  border-radius: 5px;
+}
+
+.getInTouch .error {
+  color: white;
+  padding: 5px;
+  background-color: darkred;
+  border-radius: 5px;
+}
 
 /* Blog */
 
@@ -835,18 +890,28 @@ footer * {
 }
 
 @media (max-width: 1199px) {
+  .navbar-custom .navbar-nav .nav-item a {
+    width: 100%;
+    font-size: 18px;
+  }
   .pricingFeatures1 li {
     flex-grow: 1;
-  }
-  .heroUnit {
-    background-image: none;
   }
   .heroUnit h1 {
     font-size: 58px;
   }
+  #pricing {
+    background-size: 200px;
+  }
+  .sticky-demo-link a .alert {
+    display: block;
+  }
 }
 
 @media (max-width: 991px) {
+  .heroUnit {
+    background-size: 60%;
+  }
   .heroUnit h1 {
     font-size: 43px;
   }
@@ -868,10 +933,7 @@ footer * {
 @media (max-width: 767px) {
   /* hero unit */
   .heroUnit {
-    /*height: 632px;*/
-  }
-  .heroUnit h1 {
-    /*font-size: 28px;*/
+    background-size: 55%;
   }
   .heroUnit button {
     font-size: 18px;
@@ -889,7 +951,8 @@ footer * {
   .businesses,
   .technologies,
   .faqs,
-  .whyRepairRabbit {
+  .whyRepairRabbit,
+  .comparison {
     padding: 48px 0;
   }
   /**/
@@ -901,10 +964,36 @@ footer * {
   .features .feature:nth-child(7) {
     margin-bottom: 30px;
   }
+  #pricing {
+    background-size: 100px;
+  }
 }
 
 @media (max-width: 567px) {
   .lineBreak {
     display: none;
+  }
+  .heroUnit .container {
+    padding-top: 0 !important;
+  }
+  .heroUnit h1 {
+    font-size: 38px;
+  }
+  .heroUnit p {
+    font-size: 18px;
+  }
+  .heroUnit .call-to-action p {
+    font-size: 16px;
+  }
+  #pricing {
+    background-image: none;
+  }
+  .comparision-with-repairrabbit table td,
+  .comparision-with-repairrabbit table th {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  .comparision-with-repairrabbit table td:last-child, .comparision-with-repairrabbit table th:last-child {
+    padding: 10px 5px;
   }
 }

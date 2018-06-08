@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky navbar-custom">
   <div class="container">
     <a class="navbar-brand" href="/" title="RepairRabbit">
-      <img src="/images/logo.png" title="RepairRabbit" alt="RepairRabbit" />
+      <img src="/images/logo.png" title="RepairRabbit" alt="RepairRabbit" height="45" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,32 +9,35 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item {{ if eq .Title "Demo" }} active {{ end }}">
+        <!-- <li class="nav-item {{ if eq .Title "Demo" }} active {{ end }}">
           <a class="nav-link" href="/demo" title="Demo"><span>Demo</span></a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="/#features" title="Features"><span>Features</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#why" title="Why RepairRabbit"><span>Why</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/#businesses" title="businesses"><span>Businesses</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#faqs" title="FAQs"><span>Faqs</span></a>
+          <a class="nav-link" href="/#why" title="Why RepairRabbit"><span>Why</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://kb.repairrabbit.co/" rel="noopener" target="_blank" title="Knowledgebase"><span>Knowledgebase</span></a>
+          <a class="nav-link" href="/#pricing" title="Pricing"><span>Pricing</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#faqs" title="FAQs"><span>Faqs</span></a>
         </li>
         <li class="nav-item {{ if eq .Title "Blog" }} active {{ end }}">
           <a class="nav-link" href="/blog" title="Blog"><span>Blog</span></a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" rel="noopener" target="_blank" title="contact us" class="display-flex al_center">
-            <button type="button" class="btn b-bc-y">Contact Us</button>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kb.repairrabbit.co/" rel="noopener" target="_blank" title="Knowledgebase"><span>Knowledgebase</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-link" href="https://demo.repairrabbit.co/" rel="noopener" target="_blank" title="RepairRabbit Demo" class="display-flex al_center">
+            <button type="button" class="btn b-bc-y">Try it Free</button>
           </a>
-        </li> -->
+        </li>
       </ul>
     </div>
   </div>

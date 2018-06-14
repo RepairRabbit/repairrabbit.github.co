@@ -79,11 +79,7 @@
     $.ajax({
       type: "POST",
       url: 'https://demo.repairrabbit.co/api/feedback',
-      data: {
-        name: "RepairRabbitWebsiteLead",
-        email,
-        message: "from repairrabbit website"
-      },
+      data: { name: "lead-from-site", email },
       success: function(response) {
         $("#subscribeMsg").html(`<p class='success'>Success!</p>`);
       },

@@ -1,7 +1,7 @@
 ---
 title: "license-agreement"
 date: 2018-01-18T17:54:39+05:30
-draft: false
+draft: true
 type: pages
 layout: default
 auther: ""

@@ -8,7 +8,7 @@ tags: ["Business Management", "Employee Management", "Data Management", "Multipl
 categories: ["Software", "Repair Business", "Web Application"]
 ---
 
-<img src="/images/blogs/introduction-to-repairrabbit.jpg" />
+<img src="/images/blogs/introduction-to-repairrabbit.jpg" alt="Introduction to RepairRabbit" />
 
 <br>
 
@@ -50,6 +50,6 @@ Some additional features include unlimited repairs tickets, Unlimited product ca
 <br>
 <br>
 
-<a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> to order our ready-to-use RepairRabbit system.
+<a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> for pricing & purchase information.
 
 <br>

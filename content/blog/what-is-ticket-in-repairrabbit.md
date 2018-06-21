@@ -12,10 +12,10 @@ categories: [features]
 
 <br>
 
-# Tickets     
+## Tickets     
 The main organ of the repair shop is ticketing system. Repair ticket is a job sheet  The tickets will show you exactly what you need, when you need it, from any device. The lightweight workflow will gently remind you to the next task without getting in your way or slowing you down. Maintain record of repair tickets which can be helpful in future. You can check daily weekly & monthly repair tickets easily. It will help you organize your work. Check status of any repair ticket easily. 
 
-As tickets are the crucial part of all repair businesses, repair rabbit makes it so easy for  your regular customers to book a ticket and get their time slot. Repair tickets are later converted into invoice as repair work of the device gets over.
+As tickets are the crucial part of all repair businesses, RepairRabbit makes it so easy for  your regular customers to book a ticket and get their time slot. Repair tickets are later converted into invoice as repair work of the device gets over.
 
 <br>
 

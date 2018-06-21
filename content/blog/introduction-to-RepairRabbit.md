@@ -18,9 +18,9 @@ RepairRabbit allows to monitor multiple repair stores operation and services. It
    
 RepairRabbit helps you to minimize your paperwork in repair business. We are serving to different industries to minimize their workload and time to maximize their productivity.
    
-<hr>  
+<br>
       
-### Here’s a glimpse of Repair Rabbit :
+## Features of RepairRabbit
 
 ### Dashboard
 Basically `Dashboard` means `report` or `progress report`. The dashboard allows managers to monitor the contribution of the various departments in their organization. Get an official summary dashboard and see what's going in your business.
@@ -42,8 +42,8 @@ This feature helps you to check productivity/activity of your all employees of a
    
 ### Manage multiple stores in a single place
 A-Z administration of various store in a solitary framework alongside all representative leave/occasions. Yes, you can deal with your every store in a single place.
-   
-<hr>  
+     
+<br>
 
 This is highlights of RepairRabbit. There are some more valuable features which definitely can enhance your repair business and reduce your time as well as manpower. 
 Some additional features include unlimited repairs tickets, Unlimited product categories, Unlimited invoices, Unlimited customers and many more. All features are in one plan with one price. You can manage your business effectively and also you can manage all the stores in one place.

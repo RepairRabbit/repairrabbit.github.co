@@ -6,6 +6,8 @@ auther: "Tapan"
 image: "/images/blogs/introduction-to-repairrabbit.jpg"
 tags: ["Business Management", "Employee Management", "Data Management", "Multiple Store Management", "Inventory Management"]
 categories: ["Software", "Repair Business", "Web Application"]
+sitemap:
+  priority: 0.8
 ---
 
 <img src="/images/blogs/introduction-to-repairrabbit.jpg" alt="Introduction to RepairRabbit" />

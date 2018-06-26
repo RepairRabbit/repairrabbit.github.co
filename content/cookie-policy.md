@@ -8,6 +8,8 @@ auther: "RepairRabbit"
 image: "/images/logo-with-letters.png"
 tags: []
 categories: []
+sitemap:
+  priority: 0.1
 ---
 
 

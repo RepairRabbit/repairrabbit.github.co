@@ -6,6 +6,8 @@ auther: "Prayansh"
 image: "/images/blogs/what-is-ticket-in-repairrabbit.png"
 tags: [tickets]
 categories: [features]
+sitemap:
+  priority: 0.8
 ---
 
 <img src="/images/blogs/what-is-ticket-in-repairrabbit.png" alt="what Is ticket in RepairRabbit" />

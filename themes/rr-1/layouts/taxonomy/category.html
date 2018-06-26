@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="blogs_list">
-            {{ range .Data.Pages }}
+            {{ range .Data.Pages.ByDate }}
             <div class="_blog">
               <a href="{{.Permalink}}">
                 <div class="bimage">

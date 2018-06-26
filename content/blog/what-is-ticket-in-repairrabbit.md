@@ -43,6 +43,6 @@ Ticketing feature guarantees that an entire team is kept in the loop relevant da
 <br>
 
 
-<a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> for pricing & purchase information.
+<a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> for pricing & purchase information `or` try RepairRabbit <a href="https://demo.repairrabbit.co/" rel="noopener" target="_blank" title="RepairRabbit Demo">free</a>.
 
 <br>

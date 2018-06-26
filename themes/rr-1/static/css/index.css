@@ -893,6 +893,11 @@ footer * {
   text-transform: capitalize;
 }
 
+.keywords {
+  height: 0;
+  overflow: hidden;
+}
+
 @media (max-width: 1199px) {
   .navbar-custom .navbar-nav .nav-item a {
     width: 100%;

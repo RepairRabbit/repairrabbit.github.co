@@ -32,6 +32,9 @@
                                 <article class="content markdown-body">
                                   <div>
                                     {{.Content}}
+                                    {{ if eq .Title "Businesses Who Can Take Advantage of RepairRabbit Software" }}
+                                      {{ partial "keywords.html" . }}
+                                    {{ end }}
                                   </div>
                                 </article>
                               </div>
@@ -121,33 +124,36 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="blogs_list">
-                  {{ range .Data.Pages }}
-                    <div class="_blog">
-                      <a href="{{.RelPermalink}}">
-                        <div class="bimage">
-                          {{ if .Params.image }}
-                            <img src="{{ .Params.image }}">
-                          {{else}}
-                            <img src="/images/default_blog_image.png">
-                          {{ end }}
-                        </div>
-                        <div class="blog_info">
-                          <h4 class="title">
-                            {{.Title}}
-                          </h4>
-                          <p class="summary">
-                            {{ if gt (len .Summary) 150 }}
-                                {{ slicestr .Summary 0 157 }}...
-                            {{ else }}
-                                {{ .Summary }}
+                <div class="blogs_list j_c_c f_w_w">
+                  {{ $title := .Title }}
+                  {{ range where .Site.Pages.ByDate "Section" "blog" }}
+                    {{ if ne .Title $title | and (ne .Title "Blog") }}
+                      <div class="_blog">
+                        <a href="{{.RelPermalink}}">
+                          <div class="bimage">
+                            {{ if .Params.image }}
+                              <img src="{{ .Params.image }}">
+                            {{else}}
+                              <img src="/images/default_blog_image.png">
                             {{ end }}
-                          </p>
-                        </div>
-                      </a>
-                    </div>
+                          </div>
+                          <div class="blog_info">
+                            <h4 class="title">
+                              {{.Title}}
+                            </h4>
+                            <p class="summary">
+                              {{ if gt (len .Summary) 150 }}
+                                  {{ slicestr .Summary 0 157 }}...
+                              {{ else }}
+                                  {{ .Summary }}
+                              {{ end }}
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    {{ end }}
                   {{ end }}
-                  </div> -->
+                  </div>
               </div>
             </div>
           </div>

@@ -73,6 +73,14 @@
     });
   }
 
+  function subscriptionMsg(className) {
+    setTimeout(function(){
+      $("#subscribeMsg").removeClass(className);
+      $("#subscribeMsg").html("");
+      $('input[name="email"]').val("");
+    }, 5000);
+  }
+
   $( "#getInTouch" ).submit(function( event ) {
     event.preventDefault();
     var email = $("input[name='email']").val();
@@ -81,10 +89,14 @@
       url: 'https://demo.repairrabbit.co/api/feedback',
       data: { name: "lead-from-site", email },
       success: function(response) {
-        $("#subscribeMsg").html(`<p class='success'>Success!</p>`);
+        $("#subscribeMsg").addClass("success");
+        $("#subscribeMsg").html(`Thank you for connecting with RepairRabbit`);
+        subscriptionMsg("success");
       },
       error: function(error) {
-        $("#subscribeMsg").html(`<p class="error">${JSON.parse(error.responseText).messages.email[0]}</p>`);
+        $("#subscribeMsg").addClass("error");
+        $("#subscribeMsg").html(`${JSON.parse(error.responseText).messages.email[0]}`);
+        subscriptionMsg("error");
       }
     });
   });

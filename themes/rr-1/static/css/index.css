@@ -224,7 +224,7 @@ a.bc-b-hover:hover {
 }
 
 .heroUnit h1 {
-  font-size: 70px;
+  font-size: 50px;
   color: #555555;
 }
 
@@ -237,12 +237,23 @@ a.bc-b-hover:hover {
   color: #303030;
 }
 
+.heroUnit .call-to-action button {
+  border-width: 2px;
+  margin: 10px;
+  min-width: 267px;
+}
+
+.btn-try-free-herounit {
+  color: #606060;
+  border-color: #aaa;
+  border-color: #ffc420;
+  background-color: white;
+}
+
 .heroUnit .call-to-action p {
   color: #008077;
   font-size: 18px;
-  width: 254.61px;
   font-style: italic;
-  text-align: center;
 }
 
 .sticky-demo-link {
@@ -434,6 +445,7 @@ a.bc-b-hover:hover {
 
 .whyRepairRabbit .benifits div h5 {
   color: #00645F;
+  text-transform: capitalize;
 }
 
 /* comparision with repairrabbit */
@@ -462,22 +474,27 @@ a.bc-b-hover:hover {
 .comparision-with-repairrabbit table td:first-child,
 .comparision-with-repairrabbit table th:first-child {
   border-left: 1px dashed #e0e0e0;
-  border-right: 1px dashed #e0e0e0;
 }
 
-.comparision-with-repairrabbit table td:last-child,
-.comparision-with-repairrabbit table th:last-child {
+.comparision-with-repairrabbit table td:nth-child(2),
+.comparision-with-repairrabbit table th:nth-child(2) {
   color: #00645F;
   padding: 30px 10px;
   border-left: 1px solid #00645F;
   border-right: 1px solid #00645F;
+  background-color: #f5fffe;
 }
 
-.comparision-with-repairrabbit table tr:first-child th:last-child {
+.comparision-with-repairrabbit table td:last-child,
+.comparision-with-repairrabbit table th:last-child {
+  border-right: 1px dashed #e0e0e0;
+}
+
+.comparision-with-repairrabbit table tr:first-child th:nth-child(2) {
   border-top: 3px solid #00645F;
 }
 
-.comparision-with-repairrabbit table tr:last-child td:last-child {
+.comparision-with-repairrabbit table tr:last-child td:nth-child(2) {
   border-bottom: 3px solid #00645F;
 }
 
@@ -615,6 +632,7 @@ a.bc-b-hover:hover {
 .technologies .technologiesList .tech img,
 .technologies .technologiesList .tech svg {
   margin-right: 5px;
+  max-height: 51px;
 }
 
 .technologies .technologiesList .tech label {

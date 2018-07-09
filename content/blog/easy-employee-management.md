@@ -39,8 +39,6 @@ An efficient employee management system will help the organization to keep recor
 
 As each and every detail of an employee is stored, it becomes helpful for the organization to digitalize the management system.
 
-allow employees to request time off, submit time sheets or documents and allows employees to audit or approve submissions or requests.
-
 <br>
 <br>
 

@@ -1,4 +1,9 @@
-image: registry.gitlab.com/pages/hugo:0.42.1
+image: node
+
+before_script:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.43/hugo_0.43_Linux-64bit.deb
+  - dpkg -i hugo*.deb
+  - hugo version
 
 test:
   script:
@@ -8,6 +13,8 @@ test:
 
 pages:
   script:
+  - npm install
+  - npm run build
   - hugo
   artifacts:
     paths:

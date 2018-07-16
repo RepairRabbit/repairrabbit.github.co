@@ -9,6 +9,7 @@ googleAnalytics = "UA-112062782-1"
   tag = "tags"
   category = "categories"
 [params]
+  env = "production"
   tagLine = "Enhance your repair business with RepairRabbit"
 [privacy.googleAnalytics]
   anonymizeIP = true

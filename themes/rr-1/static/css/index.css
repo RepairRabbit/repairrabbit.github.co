@@ -73,6 +73,10 @@ a.bc-b-hover:hover {
   color: #00cdc1;
 }
 
+.w_100per {
+  width: 100%;
+}
+
 /*flex*/
 
 .d_f {
@@ -85,6 +89,10 @@ a.bc-b-hover:hover {
 
 .a_l_c {
   align-items: center;
+}
+
+.a_l_e {
+  align-items: flex-end;
 }
 
 .j_c_s_b {
@@ -126,7 +134,8 @@ a.bc-b-hover:hover {
 .heroUnit .btn,
 .pricing .btn,
 .customization .btn,
-.contact-us-call-to-action .btn {
+.contact-us-call-to-action .btn,
+.api .btn {
   font-size: 24px;
   padding: 10px 72px;
   transition: all 0.05s ease-out;
@@ -305,7 +314,8 @@ a.bc-b-hover:hover {
 .technologies h2,
 .faqs h2,
 .whyRepairRabbit h2,
-.comparison h2 {
+.comparison h2,
+.api h2 {
   color: #00645F;
   font-size: 42px;
   margin-bottom: 15px;
@@ -357,7 +367,8 @@ a.bc-b-hover:hover {
 .technologies h3,
 .faqs h3,
 .whyRepairRabbit h3,
-.comparison h3 {
+.comparison h3,
+.api h3 {
   color: #515151;
   font-size: 25px;
   margin-bottom: 15px;
@@ -926,6 +937,12 @@ footer * {
   overflow: hidden;
 }
 
+.api {
+  box-shadow: 0 0 20px #ddd;
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 1199px) {
   .navbar-custom .navbar-nav .nav-item a {
     width: 100%;
@@ -989,7 +1006,8 @@ footer * {
   .technologies,
   .faqs,
   .whyRepairRabbit,
-  .comparison {
+  .comparison,
+  .api {
     padding: 48px 0;
   }
   /**/

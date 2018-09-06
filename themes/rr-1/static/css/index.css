@@ -449,6 +449,11 @@ a.bc-b-hover:hover {
 }
 
 /* comparision with repairrabbit */
+
+.comparison img {
+  transform: rotateY(180deg);
+}
+
 .comparision-with-repairrabbit {
   display: flex;
   margin: 0 auto;

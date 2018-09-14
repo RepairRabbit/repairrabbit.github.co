@@ -3,8 +3,8 @@ title: "RepairRabbit API Is Out Now!"
 date: 2018-09-14T12:07:03+05:30
 draft: false
 auther: "RepairRabbit"
-image: "/images/logo-with-letters.png"
-tags: []
+image: "/images/blogs/repair-rabbit-api-out-now.jpg"
+tags: ['feature']
 categories: []
 ---
 
@@ -30,6 +30,8 @@ Thus we've been working on RepairRabbit API since long and finally it has been l
 
 
 Have you installed RepairRabbit yet? If you haven't, Get it today and manage your repair business more smoothly! 
+
+<br>
 
 <a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> for pricing & purchase information `or` try RepairRabbit <a href="https://demo.repairrabbit.co/admin" rel="noopener" target="_blank" title="RepairRabbit Demo">free</a>.
 

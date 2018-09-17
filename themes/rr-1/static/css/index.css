@@ -54,15 +54,15 @@
 }
 
 .fs-14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .fs-18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .fs-19 {
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .fw-bold {
@@ -136,8 +136,8 @@ a.bc-b-hover:hover {
 .customization .btn,
 .contact-us-call-to-action .btn,
 .api .btn {
-  font-size: 24px;
-  padding: 10px 72px;
+  font-size: 1.5rem;
+  padding: 0.625rem 4.5rem;
   transition: all 0.05s ease-out;
 }
 
@@ -171,7 +171,7 @@ a.bc-b-hover:hover {
 
 .navbar-custom .navbar-nav .nav-item a {
   width: 100%;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .nav-transparent {
@@ -246,7 +246,7 @@ a.bc-b-hover:hover {
 }
 
 .heroUnit h1 {
-  font-size: 77px;
+  font-size: 4.8125rem;
   color: white;
 }
 
@@ -255,7 +255,7 @@ a.bc-b-hover:hover {
 }
 
 .heroUnit p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -273,7 +273,7 @@ a.bc-b-hover:hover {
 
 .heroUnit .call-to-action p {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: italic;
 }
 
@@ -291,7 +291,7 @@ a.bc-b-hover:hover {
 }
 
 .sticky-demo-link a .alert {
-  font-size: 18px;
+  font-size: 1.125rem;
   border-radius: 0;
   background-color: #ffc420;
   display: none;
@@ -315,7 +315,7 @@ a.bc-b-hover:hover {
 .faqs,
 .whyRepairRabbit,
 .comparison {
-  padding: 96px 0;
+  padding: 6rem 0;
 }
 
 .aboutUs h2,
@@ -329,8 +329,8 @@ a.bc-b-hover:hover {
 .comparison h2,
 .api h2 {
   color: #00645F;
-  font-size: 42px;
-  margin-bottom: 15px;
+  font-size: 2.625rem;
+  margin-bottom: 0.9375rem;
 }
 
 
@@ -348,7 +348,7 @@ a.bc-b-hover:hover {
 
 .aboutUs .des {
   color: #303030;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .seprator {
@@ -364,7 +364,7 @@ a.bc-b-hover:hover {
 
 .feature {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .features .feature:last-child,
@@ -382,8 +382,8 @@ a.bc-b-hover:hover {
 .comparison h3,
 .api h3 {
   color: #515151;
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 1.5625rem;
+  margin-bottom: 0.9375rem;
 }
 
 .features h2 {
@@ -424,7 +424,7 @@ a.bc-b-hover:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .runnin-bussiness-icon img {
@@ -442,13 +442,13 @@ a.bc-b-hover:hover {
 }
 
 .whyRepairRabbit .why-questions div {
-  padding: 15px;
+  padding: 0.9375rem;
 }
 
 .whyRepairRabbit .why-questions p {
   display: flex;
   color: #00645F;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .whyRepairRabbit .benifits {
@@ -463,7 +463,7 @@ a.bc-b-hover:hover {
 }
 
 .whyRepairRabbit .benifits div img {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .whyRepairRabbit .benifits div h5 {
@@ -494,9 +494,9 @@ a.bc-b-hover:hover {
   color: #303030;
   text-align: center;
   vertical-align: middle;
-  font-size: 18px;
   border-top: 1px dashed #e0e0e0;
   border-bottom: 1px dashed #e0e0e0;
+  font-size: 1.125rem;
 }
 
 .comparision-with-repairrabbit table td:first-child,
@@ -507,9 +507,9 @@ a.bc-b-hover:hover {
 .comparision-with-repairrabbit table td:nth-child(2),
 .comparision-with-repairrabbit table th:nth-child(2) {
   color: #00645F;
-  padding: 30px 10px;
   border-left: 1px solid #00645F;
   border-right: 1px solid #00645F;
+  padding: 1.875rem 0.625rem;
   background-color: #f5fffe;
 }
 
@@ -604,18 +604,18 @@ a.bc-b-hover:hover {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  margin: 0 45px 30px 45px;
+  margin: 0 2.8125rem 1.875rem 2.8125rem;
 }
 
 .businessesList li {
   padding: 0;
-  margin: 5px;
   width: 150px;
   height: 150px;
+  margin: 0.3125rem;
   display: flex;
   color: #00645F;
-  font-size: 20px;
   border-width: 2px;
+  font-size: 1.25rem;
   text-align: center;
   align-items: center;
   border-color: #00645F;
@@ -642,9 +642,9 @@ a.bc-b-hover:hover {
 }
 
 .technologies .technologiesList .tech {
-  margin: 5px;
+  margin: 0.3125rem;
   display: flex;
-  padding: 25px 15px;
+  padding: 1.5625rem 0.9375rem;
   flex-wrap: wrap;
   min-width: 200px;
   text-align: center;
@@ -659,19 +659,19 @@ a.bc-b-hover:hover {
 
 .technologies .technologiesList .tech img,
 .technologies .technologiesList .tech svg {
-  margin-right: 5px;
   max-height: 51px;
+  margin-right: 0.3125rem;
 }
 
 .technologies .technologiesList .tech label {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .technologies .technologiesList .tech a {
   flex-grow: 1;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .technologies .technologiesList .tech * {
@@ -709,7 +709,7 @@ a.bc-b-hover:hover {
 }
 
 .faqs .faq .faq-q-a ul li img{
-  margin-top: 3px;
+  margin-top: 0.1875rem;
 }
 
 /*  */
@@ -717,7 +717,7 @@ a.bc-b-hover:hover {
 .contact-us-call-to-action {
   color: white;
   display: flex;
-  padding: 50px 0;
+  padding: 3.125rem 0;
   align-items: center;
   justify-content: center;
   background-color: #00645F;
@@ -733,7 +733,7 @@ a.bc-b-hover:hover {
 }
 
 .contact-us-call-to-action div * {
-  margin: 15px;
+  margin: 0.9375rem;
 }
 
 /* footer */
@@ -752,7 +752,7 @@ footer * {
 }
 
 .markdown-body {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .getInTouch {
@@ -771,14 +771,14 @@ footer * {
 
 .getInTouch .success {
   color: white;
-  padding: 5px;
+  padding: 0.3125rem;
   background-color: darkgreen;
   border-radius: 5px;
 }
 
 .getInTouch .error {
   color: white;
-  padding: 5px;
+  padding: 0.3125rem;
   background-color: darkred;
   border-radius: 5px;
 }
@@ -802,7 +802,7 @@ footer * {
 }
 
 .blog .content {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.7;
 }
 
@@ -823,7 +823,7 @@ footer * {
 
 ._blog {
   width: 340px;
-  margin: 15px;
+  margin: 0.9375rem;
   text-align: center;
   border-radius: 3px;
   background-color: white;
@@ -856,60 +856,60 @@ footer * {
 }
 
 ._blog .blog_info {
-  padding: 15px;
+  padding: 0.9375rem;
   text-align: left;
 }
 
 ._blog .blog_info .title {
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   color: #303030;
 }
 
 ._blog .blog_info .auther,
 ._blog .blog_info .date {
   color: #505050;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: right;
 }
 
 ._blog .blog_info .auther {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   text-transform: capitalize;
 }
 
 ._blog .blog_info .summary {
   color: #606060;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .b_auther {
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: capitalize;
 }
 
 .blog_categories {
-  padding: 20px 0;
+  padding: 1.25rem 0;
   text-align: center;
   border-bottom: 1px solid #efefef;
 }
 
 .blog_categories h4 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .blog_category {
   color: #cdcdcd;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   display: inline-block;
   background-color: transparent;
   border: 1px solid #cdcdcd;
   font-weight: normal;
-  font-size: 16px;
   border-radius: 3px;
-  margin: 5px;
+  font-size: 1rem;
+  margin: 0.3125rem;
   align-items: center;
 }
 
@@ -940,7 +940,7 @@ footer * {
 .blog_details {
   display: flex;
   color: #707070;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: capitalize;
 }
 
@@ -964,7 +964,7 @@ footer * {
     flex-grow: 1;
   }
   .heroUnit h1 {
-    font-size: 68px;
+    font-size: 4.25rem;
   }
   #pricing {
     background-size: 200px;
@@ -989,17 +989,17 @@ footer * {
     background-size: 55%;
   }
   .heroUnit h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   .heroUnit button {
-    font-size: 21px;
-    padding: 10px 40px;
+    font-size: 1.3125rem;
+    padding: 0.625rem 2.5rem;
   }
   .seprator {
     height: 80px;
   }
   .pricingFeatures1 li {
-    padding: 10px;
+    padding: 0.625rem;
   }
   .contact-us-call-to-action div {
     justify-content: center;
@@ -1012,11 +1012,11 @@ footer * {
     background-size: 50%;
   }
   .heroUnit h1 {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
   .heroUnit button {
-    font-size: 18px;
-    padding: 8px 30px;
+    font-size: 1.125rem;
+    padding: 0.5rem 1.875rem;
   }
   .heroUnit img {
     max-width: auto;
@@ -1033,7 +1033,7 @@ footer * {
   .whyRepairRabbit,
   .comparison,
   .api {
-    padding: 48px 0;
+    padding: 3rem 0;
   }
   /**/
   .seprator {
@@ -1042,7 +1042,7 @@ footer * {
   /**/
   .features .feature:last-child,
   .features .feature:nth-child(7) {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
   #pricing {
     background-size: 100px;
@@ -1057,45 +1057,45 @@ footer * {
     padding-top: 0 !important;
   }
   .heroUnit p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .heroUnit .call-to-action p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   #pricing {
     background-image: none;
   }
   .comparision-with-repairrabbit table td,
   .comparision-with-repairrabbit table th {
-    font-size: 16px;
-    padding: 10px 5px;
+    font-size: 1rem;
+    padding: 0.625rem 0.3125rem;
   }
   .comparision-with-repairrabbit table td:last-child, .comparision-with-repairrabbit table th:last-child {
-    padding: 10px 5px;
+    padding: 0.625rem 0.3125rem;
   }
 }
 
 @media (max-width: 380px) {
   .heroUnit h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .heroUnit p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .heroUnit .call-to-action button {
     border-width: 2px;
-    margin: 10px;
     min-width: 200px;
+    margin: 0.625rem;
   }
 
   .heroUnit .btn,
   .pricing .btn,
   .customization .btn,
   .contact-us-call-to-action .btn, .api .btn {
-    font-size: 18px;
-    padding: 10px 20px !important;
+    font-size: 1.125rem;
+    padding: 0.625rem 1.25rem !important;
     transition: all 0.05s ease-out;
   }
 
@@ -1109,12 +1109,12 @@ footer * {
   .whyRepairRabbit h2,
   .comparison h2,
   .api h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .comparision-with-repairrabbit table td,
   .comparision-with-repairrabbit table th {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .getInTouch {

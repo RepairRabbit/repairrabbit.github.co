@@ -36,17 +36,17 @@ if (window.location.pathname == '/') {
 $( document ).ready(function() {
   $(document).on("scroll", onScroll);
   if (window.location.hash) {
-    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 76}, 1000);
+    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 60}, 1000);
   }
 });
 $(".navbar-custom li a").click(function(e) {
   if($(this).attr('href').replace('/','')) {
-    $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 76}, 1000);
+    $('html, body').animate({ scrollTop: $($(this).attr('href').replace('/','')).offset().top - 60}, 1000);
   }
 });
 
 function onScroll(event){
-  var scrollPos = $(document).scrollTop() + 76;
+  var scrollPos = $(document).scrollTop() + 77;
   $('.nav-item a').each(function () {
       var currLink = $(this);
       var links = currLink.attr("href");

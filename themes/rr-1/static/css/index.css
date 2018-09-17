@@ -188,9 +188,11 @@ a.bc-b-hover:hover {
   color: #F7FFFF;
 }
 
-.nav-transparent .navbar-nav .nav-item a:hover,
-.nav-transparent .navbar-nav .nav-item a:focus {
-  color: #F7FFFF;
+.navbar-custom.nav-transparent #navbarSupportedContent li:hover a,
+.navbar-custom.nav-transparent #navbarSupportedContent li.active a {
+  color: #ffc420;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #ffc420;
 }
 
 .nav-transparent.navbar-custom {
@@ -242,7 +244,7 @@ a.bc-b-hover:hover {
   justify-content: flex-start;
   align-items: center;
   height: calc(100vh - 76px);
-  min-height: min-content;
+  min-height: 650px;
 }
 
 .heroUnit h1 {
@@ -847,7 +849,7 @@ footer * {
 }
 
 .bimage {
-  height: 300px;
+  height: auto;
   display: flex;
   overflow: hidden;
   align-items: center;

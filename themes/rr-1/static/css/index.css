@@ -114,8 +114,8 @@ a.bc-b-hover:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('/images/background.jpg');
-  filter: grayscale(1) brightness(0.28) contrast(1);
-  -webkit-filter: grayscale(1) brightness(0.28) contrast(1);
+  filter: brightness(0.39) contrast(1);
+  -webkit-filter: brightness(0.39) contrast(1);
 }
 
 .demo-bg {

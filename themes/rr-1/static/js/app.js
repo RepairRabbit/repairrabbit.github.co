@@ -29,6 +29,7 @@ if (window.location.pathname == '/') {
   });
   $( window ).resize(function() {
     navbarClassAddRemoveOnResize();
+    $(".heroUnit").css("min-height", $('.heroUnit .container').outerHeight() + 96 + 'px');
   });
 }
 
@@ -38,6 +39,7 @@ $( document ).ready(function() {
   if (window.location.hash) {
     $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - 60}, 1000);
   }
+  $(".heroUnit").css("min-height", $('.heroUnit .container').outerHeight() + 96 + 'px');
 });
 $(".navbar-custom li a").click(function(e) {
   if($(this).attr('href').replace('/','')) {

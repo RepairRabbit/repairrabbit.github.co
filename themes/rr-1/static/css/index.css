@@ -1032,8 +1032,7 @@ footer * {
   .technologies,
   .faqs,
   .whyRepairRabbit,
-  .comparison,
-  .api {
+  .comparison {
     padding: 3rem 0;
   }
   /**/

@@ -13,7 +13,7 @@ categories: []
 
 ## What is RepairRabbit API?
 
-An application programming interface (API) is an overloaded word. In general terms, It is a set of defined methods and protocols to communicate with different components of the software. It allows a software to communicate with other software/applications. For example:- Yelp shows restaurants on Google Map. At that time Yelp communicated with Google map through the API by passing restaurant details to Google map. So that Google can plot restaurants as pins on their map.
+An application programming interface (API) is an overloaded word. In general terms, It is a set of defined methods and protocols to communicate with different components of the software. It allows a software to communicate with other software/applications. For example:- Yelp shows restaurants on Google Map. At that time Yelp communicated with Google map through the API by passing restaurant details to Google map. So that Google can plot restaurants as pins on their map.
 
 ## Why should you use it?
 

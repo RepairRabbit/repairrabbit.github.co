@@ -124,36 +124,24 @@
                     </div>
                   </div>
                 </div>
+                <hr>
                 <div class="blogs_list j_c_c f_w_w">
                   {{ $title := .Title }}
                   {{ range where .Site.Pages.ByDate "Section" "blog" }}
                     {{ if ne .Title $title | and (ne .Title "Blog") }}
                       <div class="_blog">
                         <a href="{{.RelPermalink}}">
-                          <div class="bimage">
-                            {{ if .Params.image }}
-                              <img src="{{ .Params.image }}">
-                            {{else}}
-                              <img src="/images/default_blog_image.png">
-                            {{ end }}
-                          </div>
                           <div class="blog_info">
-                            <h4 class="title">
+                            <date>{{ .Date.Format "2 January 2006" }}</date>
+                            <h5 class="title m-0">
                               {{.Title}}
-                            </h4>
-                            <p class="summary">
-                              {{ if gt (len .Summary) 150 }}
-                                  {{ slicestr .Summary 0 157 }}...
-                              {{ else }}
-                                  {{ .Summary }}
-                              {{ end }}
-                            </p>
+                            </h5>
                           </div>
                         </a>
                       </div>
                     {{ end }}
                   {{ end }}
-                  </div>
+                </div>
               </div>
             </div>
           </div>

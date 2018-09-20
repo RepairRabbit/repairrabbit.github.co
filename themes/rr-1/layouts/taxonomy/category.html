@@ -22,7 +22,7 @@
           <div class="blogs_list">
             {{ range .Data.Pages.ByDate }}
             <div class="_blog">
-              <a href="{{.Permalink}}">
+              <a href="{{.RelPermalink}}">
                 <div class="bimage">
                   {{ if .Params.image }}
                   <img src="{{ .Params.image }}">
@@ -31,16 +31,14 @@
                   {{ end }}
                 </div>
                 <div class="blog_info">
-                  <h4 class="title">
+                  <date>{{ .Date.Format "2 January 2006" }}</date>
+                  <h5 class="title">
                     {{.Title}}
-                  </h4>
+                  </h5>
                   <p class="summary">
-                    {{ if gt (len .Summary) 150 }}
-                    {{ slicestr .Summary 0 157 }}...
-                    {{ else }}
                     {{ .Summary }}
-                    {{ end }}
                   </p>
+                  <a href="{{.RelPermalink}}">read more</a>
                 </div>
               </a>
             </div>

@@ -10,8 +10,6 @@ categories: []
 
 <img src="/images/blogs/its-now-easy-to-integrate-RepairRabbit-with-other-softwares.jpg" alt="It's now easy to integrate RepairRabbit with other softwares" />
 
-## Integration of RepairRabbit with Other Softwares
-
 Data management is an important factor for every business. Many systems fail to protect your data from destruction! but we have something that will help you to maintain data and to keep it safe and secure at a place. 
 
 Now, does the thought of data loss hinder you to use RepairRabbit?
@@ -46,6 +44,8 @@ Similarly, You can build your own customized integration as per your requirement
 With RepairRabbit, you can manage multiple systems without any manual efforts and the best part is, RepairRabbit comes with one time-buying, no recurring cost, no hidden charges.
 
 If you want us to build an integration for you, you can contact us for the same.
+
+<br>
 
 <a href="mailto:contact@repairrabbit.co?subject=Query of RepairRabbit" target="_blank">Contact us</a> for pricing & purchase information `or` try RepairRabbit <a href="https://demo.repairrabbit.co/admin" rel="noopener" target="_blank" title="RepairRabbit Demo">free</a>.
 

@@ -949,6 +949,18 @@ footer * {
   text-transform: capitalize;
 }
 
+.taxonomy-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc( 100vh - 407px);
+}
+
+.taxonomy-list ._blog {
+  width: auto;
+  border-bottom: 1px solid #e2e1e1;
+}
+
 .keywords {
   height: 0;
   overflow: hidden;

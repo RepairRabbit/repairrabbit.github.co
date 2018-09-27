@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "header.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+    <link rel="stylesheet" type="text/css" href="/css/markdown.css">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 page-header b-bc-b text-center p-5">
+          <h1 class="m-0">{{ .Title }}</h1>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-sm-12">
+          <div class="blogs_list taxonomy-list">
+            <div>
+              {{ range .Data.Pages.ByDate }}
+              <div class="_blog">
+                <a href="{{.RelPermalink}}">
+                  <div class="blog_info">
+                    <h5 class="title m-0 p-0">
+                      {{.Title}}
+                    </h5>
+                  </div>
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

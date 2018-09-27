@@ -2,6 +2,40 @@
 <html lang="en">
   {{ partial "header.html" . }}
   <body>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "headline": "{{.Title}}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{.Params.image | absURL}}",
+        "height": 1920,
+        "width": 1271
+      },
+      "datePublished": "{{.Params.date}}",
+      "dateModified": "{{.Params.date}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{.Params.auther}}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{.Site.Title}}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.repairrabbit.co/images/logo.png",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "description": "{{ .Summary }}"
+    }
+    </script>
     {{ partial "navbar.html" . }}
     <link rel="stylesheet" type="text/css" href="/css/markdown.css">
     <div class="container-fluid">

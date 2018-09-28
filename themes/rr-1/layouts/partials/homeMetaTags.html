@@ -16,3 +16,35 @@
 <meta name="twitter:title" content="{{.Site.Title}} - {{.Site.Params.tagLine}}">
 <meta name="twitter:description" content="{{.Site.Title}} - {{.Site.Params.tagLine}}">
 <meta name="twitter:image" content='{{trim .Site.BaseURL "/"}}/images/features.png'>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "{{.Site.BaseURL}}",
+  "logo": "{{ "/images/logo.png" | absURL }}",
+  "name": "{{.Site.Title}}",
+  "legalName" : "{{.Site.Title}}",
+  "sameAs": [
+   "https://www.facebook.com/RepairRabbitCo/",
+   "https://twitter.com/repairrabbitco",
+   "https://www.linkedin.com/company/repairrabbit/",
+   "https://www.instagram.com/repairrabbit/?hl=en"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{.Site.BaseURL}}",
+  "name": "{{.Site.Title}}",
+  "author": {
+    "@type": "Person",
+    "name": "{{.Site.Title}}"
+  },
+  "description": "{{.Site.Params.tagLine}}",
+  "publisher": "{{.Site.Title}}"
+}
+</script>

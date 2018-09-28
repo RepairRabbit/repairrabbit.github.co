@@ -50,7 +50,27 @@
                       <div class="entry-content">
                         <!--  -->
                         <div class="blog_header" style="margin-top: 45px;">
+                          {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+                          {{ $.Scratch.Add "path" .Site.BaseURL }}
+                          {{ $currentPageUrl := .Permalink }}
                           <div class="_header">
+                            <nav aria-label="breadcrumb">
+                              <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">home</a></li>
+                                {{ range $index, $element := split $url "/" }}
+                                  {{ $.Scratch.Add "path" $element }}
+                                    {{ if ne $element "" }}
+                                      {{ $.Scratch.Add "path" "/" }}
+                                      {{ $breadcrumbItemUrl := $.Scratch.Get "path" }}
+                                      {{ if ne $currentPageUrl $breadcrumbItemUrl }}
+                                        <li class="breadcrumb-item"><a href="{{ $.Scratch.Get "path" }}" >{{ . }}</a></li>
+                                      {{ else }}
+                                        <li class="breadcrumb-item active">{{ . }}</li>
+                                      {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                              </ol>
+                            </nav>
                             <h1 style="font-size: 44px;line-height: 54px;">{{ .Params.Title }}</h1>
                             <div class="blog_details">
                               <span class="_auther">{{ .Params.auther }}</span>, &nbsp;

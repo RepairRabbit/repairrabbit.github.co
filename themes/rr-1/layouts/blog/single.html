@@ -2,6 +2,9 @@
 <html lang="en">
   {{ partial "header.html" . }}
   <body>
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ $currentPageUrl := .Permalink }}
+    {{ $pageTitle := .Params.Title }}
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -36,6 +39,43 @@
       "description": "{{ .Summary }}"
     }
     </script>
+    <script  type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RepairRabbit",
+            "item": "{{.Site.BaseURL}}"
+          },
+          {{ $.Scratch.Add "schemaPath" .Site.BaseURL }}
+          {{ range $index, $element := split $url "/" }}
+            {{ $.Scratch.Add "schemaPath" $element }}
+              {{ if ne $element "" }}
+                {{ $.Scratch.Add "schemaPath" "/" }}
+                {{ $breadcrumbItemUrl := $.Scratch.Get "schemaPath" }}
+                {{ if ne $currentPageUrl $breadcrumbItemUrl }}
+                  {
+                    "@type": "ListItem",
+                    "position": {{add $index 2}},
+                    "name": "{{ . }}",
+                    "item": "{{ $.Scratch.Get "schemaPath" }}"
+                  },
+                {{ else }}
+                  {
+                    "@type": "ListItem",
+                    "position": {{add $index 2}},
+                    "name": "{{ $pageTitle }}",
+                    "item": "{{ $.Scratch.Get "schemaPath" }}"
+                  }
+                {{ end }}
+              {{ end }}
+          {{ end }}
+        ]
+      }
+    </script>
     {{ partial "navbar.html" . }}
     <link rel="stylesheet" type="text/css" href="/css/markdown.css">
     <div class="container-fluid">
@@ -50,9 +90,7 @@
                       <div class="entry-content">
                         <!--  -->
                         <div class="blog_header" style="margin-top: 45px;">
-                          {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
                           {{ $.Scratch.Add "path" .Site.BaseURL }}
-                          {{ $currentPageUrl := .Permalink }}
                           <div class="_header">
                             <nav aria-label="breadcrumb">
                               <ol class="breadcrumb">

@@ -17,7 +17,7 @@
         <div class="col-xl-12 col-lg-12 col-sm-12">
           <div class="blogs_list taxonomy-list">
             <div>
-              {{ range .Data.Pages.ByDate }}
+              {{ range .Data.Pages.ByDate.Reverse }}
               <div class="_blog">
                 <a href="{{.RelPermalink}}">
                   <div class="blog_info">

@@ -219,7 +219,7 @@
                 <hr>
                 <div class="blogs_list j_c_c f_w_w">
                   {{ $title := .Title }}
-                  {{ range where .Site.Pages.ByDate "Section" "blog" }}
+                  {{ range where .Site.Pages.ByDate.Reverse "Section" "blog" }}
                     {{ if ne .Title $title | and (ne .Title "Blog") }}
                       <div class="_blog">
                         <a href="{{.RelPermalink}}">

@@ -242,10 +242,10 @@ a.bc-b-hover:hover {
 /* heroUnit */
 
 .heroUnit {
-  display: flex;
+  /*display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: calc(100vh - 76px);
+  height: calc(100vh - 76px);*/
 }
 
 .heroUnit h1 {
